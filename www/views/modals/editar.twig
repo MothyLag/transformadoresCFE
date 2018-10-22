@@ -1,0 +1,145 @@
+<div class="modal-header">
+  <h5 class="modal-title" name="exampleModalLongTitle">Editar</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hnameden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form id="formulario">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Fecha</label>
+      <input type="text" value="{{all.fecha}}" class="form-control" name="fecha">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Ubicación</label>
+      <input type="text" value="{{all.ubicacion}}" class="form-control" name="ubicacion">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Responsable</label>
+      <input type="text" value="{{all.responsable}}" class="form-control" name="responsable">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Número de circuito</label>
+      <input type="text" value="{{all.num_circuito}}" class="form-control" name="num_circuito">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Causa del movimiento</label>
+      <input type="text" value="{{all.causa}}" class="form-control" name="causa">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Coordenadas</label>
+      <input type="text" value="{{all.coordenadas}}" class="form-control" name="coordenadas">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Marca</label>
+      <input type="text" value="{{all.marca}}" class="form-control" name="marca">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Capacidad</label>
+      <input type="text" value="{{all.capacidad}}" class="form-control" name="capacidad">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Fases</label>
+      <input type="text" value="{{all.fases}}" class="form-control" name="fases">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Voltaje medio</label>
+      <input type="text" value="{{all.voltmed}}" class="form-control" name="voltmed">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Voltaje bajo</label>
+      <input type="text" value="{{all.voltbaj}}" class="form-control" name="voltbaj">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Número de Serie</label>
+      <input type="text" value="{{all.no_serie}}" class="form-control" name="no_serie">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Número económico</label>
+      <input type="text" value="{{all.no_econo}}" class="form-control" name="no_econo">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Litros de aceite</label>
+      <input type="text" value="{{all.aceite}}" class="form-control" name="aceite">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Peso(KG)</label>
+      <input type="text" value="{{all.peso}}" class="form-control" name="peso">
+    </div>
+    {% if all.causadan is empty %}
+
+    {% else %}
+      <div class="form-group">
+        <label for="exampleInputEmail1">Causa del daño</label>
+        <input type="text" value="{{all.causadan}}" class="form-control" name="causadan">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Clave del daño</label>
+        <input type="text" value="{{all.clavedan}}" class="form-control" name="clavedan">
+      </div>
+    {% endif %}
+    <div class="form-group">
+      <label for="exampleInputEmail1">Estado</label>
+      <input type="text" value="{{all.condiciones}}" class="form-control" name="condiciones">
+    </div>
+    <input type="hidden" name="id" value="{{all.id}}">
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+  <button type="button" class="btn btn-success guardar">Guardar</button>
+</div>
+<script type="text/javascript">
+(function ($) {
+  $.fn.serializeFormJSON = function () {
+
+      var o = {};
+      var a = this.serializeArray();
+      $.each(a, function () {
+          if (o[this.name]) {
+              if (!o[this.name].push) {
+                  o[this.name] = [o[this.name]];
+              }
+              o[this.name].push(this.value || '');
+          } else {
+              o[this.name] = this.value || '';
+          }
+      });
+      return o;
+  };
+})(jQuery);
+
+  $('.guardar').click(function(){
+    var datos = $('#formulario').serializeFormJSON();
+    var instalado = ("{{all.causadan}}" == "") ? true : false;
+    if (instalado) {
+      $.post("{{urlFor('update-instalado')}}",datos).done(function(){
+        $.notify({
+          message:'actualizado'
+        },{
+          type:'success'
+        });
+      }).fail(function(){
+        $.notify({
+          message:'ocurrio un error'
+        },{
+          type:'danger'
+        });
+      });
+    } else {
+      $.post("{{urlFor('update-retirado')}}",datos).done(function(){
+        $.notify({
+          message:'actualizado'
+        },{
+          type:'success'
+        });
+      }).fail(function(){
+        $.notify({
+          message:'ocurrio un error'
+        },{
+          type:'danger'
+        });
+      });
+    }
+  });
+</script>

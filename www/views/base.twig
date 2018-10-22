@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="web/css/animate.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="web/css/bootstrap.min.css">
+    <script src="web/js/jquery.js"></script>
+    <script src="web/js/sweetalert2.all.min.js"></script>
+    <script src="web/js/bootstrap-notify.min.js"></script>
+    <script src="web/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <script src="web/js/popper.min.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <title>CFE</title>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <span class="navbar-brand" href="#">Control de movimientos</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="clickeable nav-item nav-link active" href="#" data-vista="inicio">Registrar<span class="sr-only">(current)</span></a>
+          <a class="clickeable nav-item nav-link" data-vista="busqueda" href="#">Buscar</a>
+          <a class="clickeable nav-item nav-link" data-vista="graficas" href="#">Graficas</a>
+          <a class="clickeable nav-item nav-link" data-vista="reporte" href="#">Reporte</a>
+        </div>
+      </div>
+    </nav>
+  </head>
+  <body>
+    {%block contenido%}
+    {%endblock%}
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLongTitle">Ver más</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Fecha</label>
+      <input type="text" value="{{all.fecha}}" class="form-control" id="fecha" disabled>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Ubicación</label>
+      <input type="text" value="{{all.ubicacion}}" class="form-control" id="fecha" disabled>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Responsable</label>
+      <input type="text" value="{{all.responsable}}" class="form-control" id="fecha" disabled>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Número de circuito</label>
+      <input type="text" value="{{all.num_circuito}}" class="form-control" id="fecha" disabled>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Causa del movimiento</label>
+      <input type="text" value="{{all.causa}}" class="form-control" id="fecha" disabled>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Coordenadas</label>
+      <input type="text" value="{{all.coordenadas}}" class="form-control" id="fecha" disabled>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Marca</label>
+      <input type="text" value="{{all.marca}}" class="form-control" id="fecha" disabled>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Capacidad</label>
+      <input type="text" value="{{all.capacidad}}" class="form-control" id="fecha" disabled>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Fases</label>
+      <input type="text" value="{{all.fases}}" class="form-control" id="fecha" disabled>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Voltaje medio</label>
+      <input type="text" value="{{all.voltmed}}" class="form-control" id="fecha" disabled>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Voltaje bajo</label>
+      <input type="text" value="{{all.voltbaj}}" class="form-control" id="fecha" disabled>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Número de Serie</label>
+      <input type="text" value="{{all.no_serie}}" class="form-control" id="fecha" disabled>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Número económico</label>
+      <input type="text" value="{{all.no_econo}}" class="form-control" id="fecha" disabled>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Tipo</label>
+      <input type="text" value="{{all.tipo}} {{all.tipo2}}" class="form-control" id="fecha" disabled>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Litros de aceite</label>
+      <input type="text" value="{{all.aceite}}" class="form-control" id="fecha" disabled>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Peso(KG)</label>
+      <input type="text" value="{{all.peso}}" class="form-control" id="fecha" disabled>
+    </div>
+    {% if all.causadan is empty %}
+
+    {% else %}
+      <div class="form-group">
+        <label for="exampleInputEmail1">Causa del daño</label>
+        <input type="text" value="{{all.causadan}}" class="form-control" id="fecha" disabled>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Clave del daño</label>
+        <input type="text" value="{{all.clavedan}}" class="form-control" id="fecha" disabled>
+      </div>
+    {% endif %}
+    <div class="form-group">
+      <label for="exampleInputEmail1">Estado</label>
+      <input type="text" value="{{all.condiciones}}" class="form-control" id="fecha" disabled>
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+</div>

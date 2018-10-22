@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="web/css/awesomplete.css">
+<script src="web/js/awesomplete.js" charset="utf-8"></script>
+<div class="container">
+  <h1>Buscador</h1>
+  <div class="row">
+    <div class="col md-3 offset-md-4">
+      <nav class="nav">
+      <form id="barrabuscar" class="form-inline my-2 my-lg-0">
+        <select id="rubro" class="custom-select">
+          <option disabled selected>Seleccione una</option>
+          <option>fecha</option>
+          <option>ubicacion</option>
+          <option value="num_circuito">circuito</option>
+          <option value="no_serie">no. de serie</option>
+          <option value="no_econo">no. economico</option>
+          <option>capacidad</option>
+          <option value="voltmed">voltaje en media tension</option>
+        </select>
+         <input id="txtBuscar" class="form-control mr-sm-2 awesomplete" type="text" placeholder="Buscar">
+         <button id="submit" class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+       </form>
+      </nav>
+    </div>
+  </div>
+  <div id="contenido">
+
+  </div>
+  <script type="text/javascript">
+    $('.dropdown-toggle').dropdown();
+    $('#barrabuscar').submit(function(e){
+      e.preventDefault;
+      var rubro = $("#rubro").val();
+      var texto = $("#txtBuscar").val();
+      $.get("{{urlFor('getsearch')}}",{rubro:rubro,texto:texto},function(data){
+        $('#contenido').html(data);
+      });
+      return false;
+    });
+    var lista = [""]
+    var input = document.getElementById("txtBuscar");
+    awesom = new Awesomplete(input,{list:lista});
+    $("#rubro").change(function() {
+      var rubro = $(this).val();
+      $.get("{{urlFor('getopciones')}}",{rubro:rubro},function(data){
+        input.value="";
+        awesom.list = data;
+      },'json');
+    });
+  </script>
+</div>

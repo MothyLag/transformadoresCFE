@@ -1,0 +1,21 @@
+{%extends 'base.twig'%}
+{%block contenido%}
+<div id="contenedor">
+
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+  $.get("{{urlFor('getdash')}}",{vista:"inicio"},function(data){
+    $('#contenedor').html(data);
+  });
+  $('.clickeable').click(function(){
+    var vista = $(this).data("vista");
+    $.get("{{urlFor('getdash')}}",{vista:vista},function(data){
+      $('#contenedor').html(data);
+      $('.clickeable').removeClass("active");
+    });
+    console.log($(this).addClass("active"));
+  });
+});
+</script>
+{%endblock%}

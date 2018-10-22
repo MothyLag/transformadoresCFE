@@ -1,0 +1,28 @@
+<script type="text/javascript" src="web/js/chart.min.js"></script>
+<div class="container">
+  <div class="row">
+    <div class="col sm-4 offset-sm-4">
+      <label for="year">Ingrese un año</label>
+      <input id="year" type="text" placeholder="Año">
+      <button id="submit" class="btn btn-outline-success" type="submit">Generar</button>
+    </div>
+  </div>
+</div>
+<div class="chart-container container">
+</div>
+<script>
+$('#submit').click(function(){
+  $.getJSON("{{urlFor('get-grafica')}}",{year:$('#year').val()},function(data){
+    if ((data['general'].reduce((a,b)=>a+b))!=0) {
+      $.get("{{urlFor('loadcharts')}}",function(data){
+        $('.chart-container').html(data);
+      });
+    }else{
+      $('.chart-container').html("<h1>No Hay ningun movimiento este año</h1>");
+    }
+  });
+});
+</script>
+<style media="screen">
+
+</style>

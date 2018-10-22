@@ -1,0 +1,111 @@
+{% if all is empty %}
+    <div class="titulo">
+      <h1>No se encontraron registros</h1>
+    </div>
+{% else %}
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Fecha</th>
+        <th scope="col">Ubicación</th>
+        <th scope="col">Responsable</th>
+        <th scope="col">Subestación y Número</th>
+        <th scope="col">Causa de movimiento</th>
+        <th scope="col">Rol</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for item in all %}
+      <tr>
+        <td>{{loop.index}}</td>
+        <td>{{item.fecha}}</td>
+        <td>{{item.ubicacion}}</td>
+        <td>{{item.responsable}}</td>
+        <td>{{item.num_circuito}}</td>
+        <td>{{item.causa}}</td>
+        <td>Retirado</td>
+        <td>
+          <button data-tabla="retirado" data-id="{{item.id}}" class="vm btn btn-primary">ver mas</button>
+          <button data-tabla="retirado" data-id="{{item.id}}" class="ed btn btn-warning">Editar</button>
+          <button data-tabla="retirado" data-id="{{item.id}}" class="del btn btn-danger">Eliminar</button>
+        </td>
+      </tr>
+      <tr>
+        <td>{{loop.index}}</td>
+        <td>{{item.fechai}}</td>
+        <td>{{item.ubicacioni}}</td>
+        <td>{{item.responsablei}}</td>
+        <td>{{item.num_circuitoi}}</td>
+        <td>{{item.causai}}</td>
+        <td>instalado</td>
+        <td>
+          <button data-tabla="instalado" data-id="{{item.idi}}" class="vm btn btn-primary">ver mas</button>
+          <button data-tabla="instalado" data-id="{{item.idi}}" class="ed btn btn-warning">Editar</button>
+          <button data-tabla="instalado" data-id="{{item.idi}}" class="del btn btn-danger">Eliminar</button>
+        </td>
+      </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+    </div>
+  </div>
+</div>
+
+<style media="screen">
+.titulo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+</style>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.vm').click(function(){
+      var id = $(this).data('id');
+      var tabla = $(this).data('tabla');
+      $.get("{{urlFor('getverm')}}",{id:id,tabla:tabla},function(data){
+        $('.modal-content').html(data);
+      });
+      $('.modal').modal('show');
+    });
+    $('.ed').click(function(){
+      var id = $(this).data('id');
+      var tabla = $(this).data('tabla');
+      $.get("{{urlFor('getedit')}}",{id:id,tabla:tabla},function(data){
+        $('.modal-content').html(data);
+      });
+      $('.modal').modal('show');
+    });
+    $('.del').click(function(){
+      var id = $(this).data('id');
+      var tabla = $(this).data('tabla');
+      swal({
+        title: 'Advertencia',
+        text: "Esto también eliminara al instalado o retirado que se tenga ligado",
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'continuar',
+        cancelButtonText: 'cancelar'
+      }).then((result) => {
+        if (result.value) {
+          $.post("{{urlFor('eliminar')}}",{id:id,tabla,tabla}).done(function(){
+            swal('Bien','Registro eliminado','success');
+            location.reload();
+          });
+        }
+      })
+    });
+  });
+</script>

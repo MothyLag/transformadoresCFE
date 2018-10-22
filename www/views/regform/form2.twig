@@ -1,0 +1,122 @@
+<div class="container">
+<div class="from-row" id="en">
+<h1>Retirado</h1>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="inputEmail4">Marca</label>
+    <input type="mar" class="form-control" id="marca">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputEmail4">capacidad</label>
+    <select class="form-control" id="capacidad">
+      <option disabled selected>Seleccione una</option>
+      <option>5 KVA</option>
+      <option>10 KVA</option>
+      <option>15 KVA</option>
+      <option>25 KVA</option>
+      <option>30 KVA</option>
+      <option>37.5 KVA</option>
+      <option>45 KVA</option>
+      <option>50 KVA</option>
+      <option>75 KVA</option>
+      <option>112 KVA</option>
+      <option>225 KVA</option>
+      <option>500 KVA</option>
+    </select>
+    </div>
+  <div class="form-group col-md-6">
+    <label for="inputEmail4">Numero de boquillas en media tensión</label>
+    <select class="form-control" id="boquillas">
+      <option disabled selected>Seleccione una</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputEmail4">Voltaje de media tensión</label>
+    <select class="form-control" id="voltajemed">
+      <option disabled selected>Seleccione una</option>
+      <option>33000</option>
+      <option>33000YT</option>
+      <option>13200</option>
+      <option>13200YT</option>
+    </select>
+  </div>
+    <div class="from-group col-md-6">
+      <label for="inputEmail4">Voltaje de baja tensión</label>
+    <input type="mar" class="form-control" id="voltajebaj">
+    </div>
+    <div class="from-group col-md-6">
+      <label for="inputEmail4">N° de serie</label>
+      <input type="mar" class="form-control" id="serie">
+    </div>
+    <div class="from-group col-md-6">
+      <label for="inputEmail4">N° economico</label>
+      <input type="mar" class="form-control" id="economico">
+    </div>
+    <div class="form-group col-md-3">
+          <div class="col-sm-3">
+            <label for="inputEmail4" id="vol">Tipo</label>
+          </div>
+      <select class="form-control" id="tipo">
+        <option disabled selected>Seleccione una</option>
+        <option>AEREO</option>
+        <option>PEDESTAL</option>
+      </select>
+      </div>
+      <div class="form-group col-md-3" id="grp">
+      <select class="form-control" id="tipo2">
+        <option disabled selected>Seleccione una</option>
+        <option>CONVENCIONAL</option>
+        <option>AUTOPROTEGIDO</option>
+      </select>
+    </div>
+  <div class="form-group col-md-6">
+      <label for="inputEmail4">Litros de aceite</label>
+      <input type="mar" class="form-control" id="litros">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputEmail4">Peso en KG</label>
+    <input type="mar" class="form-control" id="peso">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputEmail4">Causa del daño</label>
+    <input type="mar" class="form-control" id="causa2">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputEmail4">Clave del daño</label>
+    <input type="mar" class="form-control" id="clave">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputEmail4">Disposición</label>
+    <select class="form-control" id="disposicion">
+      <option disabled selected>Seleccione una</option>
+      <option>CHATARRA</option>
+      <option>REHA</option>
+      <option>ALMACEN</option>
+    </select>
+  </div>
+  <div class="form-group col-md-6">
+  </div>
+  <button type="button" class="btn btn-danger cancelar">Cancelar</button>
+  <button id="siguiente2" type="button" class="btn btn-success">Siguiente</button>
+<style media="screen">
+  #grp{
+    margin-top: 32px;
+  }
+</style>
+<style media="screen">
+#en{
+  margin-top: 20px;
+}
+
+h1{
+  margin-left: 41%;
+}
+</style>
+<script type="text/javascript">
+  $('.cancelar').click(function(){
+    location.reload();
+  });
+</script>

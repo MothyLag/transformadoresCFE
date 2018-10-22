@@ -1,0 +1,8 @@
+{
+    "require": {
+    "php": ">=5.3.0",
+    "slim/slim": "2.*",
+    "twig/twig": ">=1.12,<2.0-dev",
+    "slim/views": "^0.1.3"
+  }
+}
