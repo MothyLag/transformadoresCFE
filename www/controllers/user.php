@@ -29,10 +29,9 @@ $app->get('/search/',function () use($app){
   $datos['all'] = null;
   if($rubro == "tiempo"){
       $tiempo = "'%/".$_GET['texto']."'";
-      $st = $app->db->prepare("SELECT r.id,r.fecha,r.ubicacion,r.responsable,r.num_circuito,r.causa,i.id idi,i.fecha fechai,i.ubicacion ubicacioni,i.responsable responsablei,i.num_circuito num_circuitoi ,i.causa causai FROM retirado AS r JOIN instalado AS i ON(r.id_instalado = i.id) WHERE r.fecha LIKE '%2018'");
+      $st = $app->db->prepare("SELECT r.id,r.fecha,r.ubicacion,r.responsable,r.num_circuito,r.causa,i.id idi,i.fecha fechai,i.ubicacion ubicacioni,i.responsable responsablei,i.num_circuito num_circuitoi ,i.causa causai FROM retirado AS r JOIN instalado AS i ON(r.id_instalado = i.id) WHERE fechai LIKE '%2018'");
+      $st->execute();
       $datos['all'] = $st->fetchAll();
-      echo $_GET['texto'];
-      echo json_encode($datos);
   }else{
     $st = $app->db->prepare("SELECT r.id,r.fecha,r.ubicacion,r.responsable,r.num_circuito,r.causa,i.id idi,i.fecha fechai,i.ubicacion ubicacioni,i.responsable responsablei,i.num_circuito num_circuitoi ,i.causa causai FROM retirado AS r JOIN instalado AS i ON(r.id_instalado = i.id) WHERE r.$rubro = '$texto'");
     $st->setFetchMode(PDO::FETCH_OBJ);

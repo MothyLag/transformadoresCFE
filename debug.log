@@ -1,0 +1,75 @@
+- 13:03:23.015 INFO: --------------------------------------------------------
+- 13:03:23.015 INFO: Started application
+- 13:03:23.015 INFO: Logging to: C:\Users\Mothy\Documents\proyectoNestor\debug.log
+- 13:03:23.015 INFO: Log level = DEBUG4
+- 13:03:23.015 INFO: Starting Mongoose 3.9c web server
+- 13:03:23.015 INFO: WWW directory: C:\Users\Mothy\Documents\proyectoNestor\www
+- 13:03:23.015 INFO: Index files: index.html,index.php
+- 13:03:23.015 INFO: CGI interpreter: C:\Users\Mothy\Documents\proyectoNestor\php\php-cgi.exe
+- 13:03:23.015 INFO: CGI pattern: **.php$
+- 13:03:23.015 INFO: Hide files patterns: 
+- 13:03:23.015 INFO: CGI environment variables set: TMP=C:\Users\Mothy\AppData\Local\Temp\,TEMP=C:\Users\Mothy\AppData\Local\Temp\,TMPDIR=C:\Users\Mothy\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 13:03:24.031 INFO: Web server url: http://127.0.0.1:5000/
+- 13:03:24.031 INFO: remote_debugging_port = 63026
+- 13:03:24.031 DEBUG: Command line string for the browser process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --remote-debugging-port=63026
+- 13:03:25.390 DEBUG: App::OnContextInitialized()
+- 13:03:25.390 DEBUG: Window max width/height = 1286/680
+- 13:03:25.390 DEBUG: GetBrowserWindow(): not found, hwnd = 460136
+- 13:03:25.390 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 13:03:25.422 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 13:03:25.422 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 13:03:25.422 DEBUG: BrowserWindow::CreateBrowserControl()
+- 13:03:25.422 DEBUG: StoreBrowserWindow(): hwnd = 460136
+- 13:03:25.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x9874 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=24.20.13011.1009 --gpu-driver-date=8-27-2018 --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --service-request-channel-token=AA5870097AA7FE604C7C87632929395B --mojo-platform-channel-handle=1752 /prefetch:2
+- 13:03:25.594 DEBUG: ClientHandler::OnAfterCreated()
+- 13:03:25.594 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 13:03:25.640 DEBUG: OnLoadingStateChange: loading=1, url=
+- 13:03:25.000 DEBUG: Command line string for the renderer process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=renderer --no-sandbox --primordial-pipe-token=E1C52686DEBC42E82C5C185202531F63 --lang=en-US --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=E1C52686DEBC42E82C5C185202531F63 --renderer-client-id=3 --mojo-platform-channel-handle=2192 /prefetch:1
+- 13:03:25.047 DEBUG: OnBrowserCreated()
+[1029/130326.679:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 13:03:29.281 DEBUG: OnContextCreated()
+- 13:03:29.031 INFO: GET 200 /
+- 13:03:29.031 INFO: GET 200 /
+- 13:03:29.062 INFO: GET 200 /web/css/bootstrap-datepicker.min.css
+- 13:03:29.062 INFO: GET 200 /web/css/bootstrap-datepicker.min.css
+- 13:03:29.125 INFO: GET 200 /web/css/animate.css
+- 13:03:29.265 INFO: GET 200 /web/js/bootstrap-datepicker.js
+- 13:03:29.344 INFO: GET 304 /web/js/bootstrap-datepicker.js
+- 13:03:29.390 INFO: GET 200 /web/css/bootstrap.min.css
+- 13:03:29.734 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/
+- 13:03:30.109 INFO: GET 200 /dashboard/?vista=inicio
+- 13:03:30.422 INFO: GET 200 /getPagina/?pagina=1
+- 13:03:30.469 INFO: GET 500 /favicon.ico
+- 13:03:30.469 INFO: GET 200 /dashboard/?vista=inicio
+- 13:03:30.828 INFO: GET 200 /getPagina/?pagina=1
+- 13:03:47.515 INFO: GET 500 /favicon.ico
+- 13:03:47.515 INFO: GET 200 /dashboard/?vista=busqueda
+- 13:03:47.531 INFO: GET 304 /web/css/awesomplete.css
+- 13:03:47.828 INFO: GET 304 /web/js/awesomplete.js
+- 13:05:18.265 INFO: GET 500 /favicon.ico
+- 13:05:18.265 INFO: GET 200 /dashboard/?vista=inicio
+- 13:05:18.531 INFO: GET 200 /getPagina/?pagina=1
+- 13:05:22.625 INFO: GET 500 /favicon.ico
+- 13:05:22.625 INFO: GET 200 /dashboard/?vista=busqueda
+- 13:05:22.625 INFO: GET 304 /web/css/awesomplete.css
+- 13:05:22.937 INFO: GET 304 /web/js/awesomplete.js
+- 13:05:28.250 INFO: GET 500 /search/?rubro=tiempo&texto=2018
+- 13:05:33.156 INFO: GET 304 /web/css/awesomplete.css
+- 13:05:33.328 INFO: GET 304 /web/js/bootstrap.min.js.map
+- 13:05:33.390 INFO: GET 304 /web/css/bootstrap.min.css.map
+- 13:05:33.812 INFO: GET 500 /web/js/popper.min.js.map
+- 13:05:33.015 INFO: GET 500 /web/css/awesomplete.css.map
+- 13:05:57.203 INFO: GET 200 /search/?rubro=tiempo&texto=2018
+- 13:07:36.297 INFO: GET 200 /search/?rubro=tiempo&texto=2018
+- 13:07:49.297 INFO: GET 200 /search/?rubro=tiempo&texto=2018
+- 13:07:56.953 DEBUG: WM_DESTROY
+- 13:07:56.953 DEBUG: RemoveBrowserWindow(): hwnd = 460136
+- 13:07:56.953 INFO: Stopping Mongoose web server
+- 13:07:56.953 DEBUG: Mongoose webserver stopped immediately
+- 13:07:56.969 DEBUG: OnBeforeClose() hwnd=918884
+- 13:07:56.969 DEBUG: RemoveBrowserWindow(): hwnd = 918884
+- 13:07:56.969 DEBUG: GetBrowserWindow(): not found, hwnd = 918884
+- 13:07:56.969 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 13:07:56.969 DEBUG: Calling CefQuitMessageLoop()
+- 13:07:57.031 INFO: Ended application
+- 13:07:57.031 INFO: --------------------------------------------------------
