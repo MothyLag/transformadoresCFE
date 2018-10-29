@@ -4,17 +4,17 @@
   <canvas id="myChart"></canvas>
 </div>
 <br>
-<h1>Total de retirados en chatarra por mes</h1>
+<h1>Total de movimientos por Transformadores dañados en el año</h1>
 <br>
 <div class="row">
   <canvas class="col-sm-12" id="myChart2"></canvas>
 </div>
-<h1>Total de retirados en reha por mes</h1>
+<h1>Total de movimientos en red en el año</h1>
 <br>
 <div class="row">
   <canvas class="col-sm-12" id="myChart3"></canvas>
 </div>
-<h1>Total de retirados en almacen por mes</h1>
+<h1>Total de movimientos por Creación de área nueva en el año</h1>
 <br>
 <div class="row">
   <canvas class="col-sm-12" id="myChart4"></canvas>
@@ -50,7 +50,7 @@ $.getJSON("{{urlFor('get-grafica')}}",{year:$('#year').val()},function(data){
         label: "Movimientos en el año",
         backgroundColor: 'rgb(255, 99, 132)',
         borderColor: 'rgb(255, 99, 132)',
-        data: data['chatarra'],
+        data: data['dano'],
       }]
     },
     // Configuration options go here
@@ -68,7 +68,7 @@ $.getJSON("{{urlFor('get-grafica')}}",{year:$('#year').val()},function(data){
         label: "Movimientos en el año",
         backgroundColor: 'rgb(255, 99, 132)',
         borderColor: 'rgb(255, 99, 132)',
-        data: data['reha'],
+        data: data['red'],
       }]
     },
     // Configuration options go here
@@ -86,7 +86,7 @@ $.getJSON("{{urlFor('get-grafica')}}",{year:$('#year').val()},function(data){
         label: "Movimientos en el año",
         backgroundColor: 'rgb(255, 99, 132)',
         borderColor: 'rgb(255, 99, 132)',
-        data: data['almacen'],
+        data: data['nuevo'],
       }]
     },
     // Configuration options go here

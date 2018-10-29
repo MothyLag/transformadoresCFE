@@ -17,17 +17,21 @@ $app->get("/getPagina/",function () use($app){
 $app->post("/registrar/",function () use($app){
   $instalado = array();
   $retirado = array();
-  foreach ($_POST['instalado'] as $value) {
-    $instalado[] = $value;
+  if($_POST['instalado']['fecha'] ==''){
+
+  }else{
+    foreach ($_POST['instalado'] as $value) {
+      $instalado[] = $value;
+    }
+    foreach ($_POST['retirado'] as $value) {
+      $retirado[] = $value;
+    }
+    $sql2 = "INSERT INTO retirado(id_instalado,fecha,ubicacion,responsable,num_circuito,causa,coordenadas,marca,capacidad,fases,voltmed,voltbaj,no_serie,no_econo,tipo,tipo2,aceite,peso,causadan,clavedan,condiciones) VALUES (last_insert_rowid(),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    $st = $app->db->prepare("INSERT INTO instalado(fecha,ubicacion,responsable,num_circuito,causa,coordenadas,marca,capacidad,fases,voltmed,voltbaj,no_serie,no_econo,tipo,tipo2,aceite,peso,condiciones) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    $st->execute($instalado);
+    $st2 = $app->db->prepare($sql2);
+    $st2->execute($retirado);
   }
-  foreach ($_POST['retirado'] as $value) {
-    $retirado[] = $value;
-  }
-  $sql2 = "INSERT INTO retirado(id_instalado,fecha,ubicacion,responsable,num_circuito,causa,coordenadas,marca,capacidad,fases,voltmed,voltbaj,no_serie,no_econo,tipo,tipo2,aceite,peso,causadan,clavedan,condiciones) VALUES (last_insert_rowid(),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-  $st = $app->db->prepare("INSERT INTO instalado(fecha,ubicacion,responsable,num_circuito,causa,coordenadas,marca,capacidad,fases,voltmed,voltbaj,no_serie,no_econo,tipo,tipo2,aceite,peso,condiciones) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-  $st->execute($instalado);
-  $st2 = $app->db->prepare($sql2);
-  $st2->execute($retirado);
   //var_dump($st->debugDumpParams());
 })->name('registrar');
 

@@ -11,7 +11,7 @@
     },
     "main_window": {
         "title": "PHP Desktop Chrome",
-        "icon": "/cfeicon.png",
+        "icon": "cfeicon.png",
         "default_size": [800, 600],
         "minimum_size": [640, 480],
         "maximum_size": [0, 0],
@@ -24,7 +24,7 @@
         "minimize_to_tray_message": "Minimized to tray"
     },
     "popup_window": {
-        "icon": "cfeicon.png",
+        "icon": "/cfeicon.png",
         "fixed_title": "",
         "center_relative_to_parent": true,
         "default_size": [800, 600]

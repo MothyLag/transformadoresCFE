@@ -8,6 +8,7 @@
       <form id="barrabuscar" class="form-inline my-2 my-lg-0">
         <select id="rubro" class="custom-select">
           <option disabled selected>Seleccione una</option>
+          <option value="tiempo">año</option>
           <option>fecha</option>
           <option>ubicacion</option>
           <option value="num_circuito">circuito</option>
@@ -41,10 +42,15 @@
     awesom = new Awesomplete(input,{list:lista});
     $("#rubro").change(function() {
       var rubro = $(this).val();
-      $.get("{{urlFor('getopciones')}}",{rubro:rubro},function(data){
+      if (rubro == 'tiempo') {
         input.value="";
-        awesom.list = data;
-      },'json');
+        awesom.list = [""];
+      }else{
+        $.get("{{urlFor('getopciones')}}",{rubro:rubro},function(data){
+          input.value="";
+          awesom.list = data;
+        },'json');
+      }
     });
   </script>
 </div>

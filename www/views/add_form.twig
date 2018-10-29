@@ -32,73 +32,77 @@
         general.circuito = $('#circuito').val();
         general.causa = $('#causa').val();
         general.coordenadas = $('#coordenadas').val();
-        pagina++;
-        $.get("{{urlFor('getPagina')}}",{pagina:pagina},function(data){
-          $('#contenedor').html(data);
-        }).done(function(){
-          $('#siguiente2').click(function(data){
-            info.retirado.fecha = general.fecha;
-            info.retirado.ubicacion = general.ubicacion;
-            info.retirado.trabajador = general.trabajador;
-            info.retirado.circuito = general.circuito;
-            info.retirado.causa = general.causa;
-            info.retirado.coordenadas = general.coordenadas;
-            info.retirado.marca = $('#marca').val();
-            info.retirado.capacidad = $('#capacidad').val();
-            info.retirado.boquillas = $('#boquillas').val();
-            info.retirado.voltajemed = $('#voltajemed').val();
-            info.retirado.voltajebaj = $('#voltajebaj').val();
-            info.retirado.serie = $('#serie').val();
-            info.retirado.economico = $('#economico').val();
-            info.retirado.tipo = $('#tipo').val();
-            info.retirado.tipo2 = $('#tipo2').val();
-            info.retirado.litros = $('#litros').val();
-            info.retirado.peso = $('#peso').val();
-            info.retirado.causa2 = $('#causa2').val();
-            info.retirado.clave = $('#clave').val();
-            info.retirado.disposicion = $('#disposicion').val();
-            pagina++;
-            $.get("{{urlFor('getPagina')}}",{pagina:pagina},function(data2){
-              $('#contenedor').html(data2);
-            }).done(function(){
-              $('#registrar').click(function(){
-                info.instalado.fecha = general.fecha;
-                info.instalado.ubicacion = general.ubicacion;
-                info.instalado.trabajador = general.trabajador;
-                info.instalado.circuito = general.circuito
-                info.instalado.causa = general.causa;
-                info.instalado.coordenadas = general.coordenadas;
-                info.instalado.marca_i = $('#marca_i').val();
-                info.instalado.capacidad_i = $('#capacidad_i').val();
-                info.instalado.boquillas_i = $('#boquillas_i').val();
-                info.instalado.voltajemed_i = $('#voltajemed_i').val();
-                info.instalado.voltajebaj_i = $('#voltajebaj_i').val();
-                info.instalado.serie_i = $('#serie_i').val();
-                info.instalado.economico_i = $('#economico_i').val();
-                info.instalado.tipo_i = $('#tipo_i').val();
-                info.instalado.tipo2_i = $('#tipo2_i').val();
-                info.instalado.litros_i = $('#litros_i').val();
-                info.instalado.peso_i = $('#peso_i').val();
-                info.instalado.estado_i = $('#estado_i').val();
-                $.post("{{urlFor('registrar')}}",info).done(function(){
-                  $('#registrar').addClass('disabled');
-                  $.notify({
-                    message:"registro exitoso"
-                  },{
-                    type:"success"
-                  });
-                  location.reload();
-                }).fail(function(){
-                  $.notify({
-                    message:"ocurrio un error"
-                  },{
-                    type:"danger"
+        if(general.fecha == ""){
+          swal("Error","debe llenar la fecha","error");
+        }else{
+          pagina++;
+          $.get("{{urlFor('getPagina')}}",{pagina:pagina},function(data){
+            $('#contenedor').html(data);
+          }).done(function(){
+            $('#siguiente2').click(function(data){
+              info.retirado.fecha = general.fecha;
+              info.retirado.ubicacion = general.ubicacion;
+              info.retirado.trabajador = general.trabajador;
+              info.retirado.circuito = general.circuito;
+              info.retirado.causa = general.causa;
+              info.retirado.coordenadas = general.coordenadas;
+              info.retirado.marca = $('#marca').val();
+              info.retirado.capacidad = $('#capacidad').val();
+              info.retirado.boquillas = $('#boquillas').val();
+              info.retirado.voltajemed = $('#voltajemed').val();
+              info.retirado.voltajebaj = $('#voltajebaj').val();
+              info.retirado.serie = $('#serie').val();
+              info.retirado.economico = $('#economico').val();
+              info.retirado.tipo = $('#tipo').val();
+              info.retirado.tipo2 = $('#tipo2').val();
+              info.retirado.litros = $('#litros').val();
+              info.retirado.peso = $('#peso').val();
+              info.retirado.causa2 = $('#causa2').val();
+              info.retirado.clave = $('#clave').val();
+              info.retirado.disposicion = $('#disposicion').val();
+              pagina++;
+              $.get("{{urlFor('getPagina')}}",{pagina:pagina},function(data2){
+                $('#contenedor').html(data2);
+              }).done(function(){
+                $('#registrar').click(function(){
+                  info.instalado.fecha = general.fecha;
+                  info.instalado.ubicacion = general.ubicacion;
+                  info.instalado.trabajador = general.trabajador;
+                  info.instalado.circuito = general.circuito
+                  info.instalado.causa = general.causa;
+                  info.instalado.coordenadas = general.coordenadas;
+                  info.instalado.marca_i = $('#marca_i').val();
+                  info.instalado.capacidad_i = $('#capacidad_i').val();
+                  info.instalado.boquillas_i = $('#boquillas_i').val();
+                  info.instalado.voltajemed_i = $('#voltajemed_i').val();
+                  info.instalado.voltajebaj_i = $('#voltajebaj_i').val();
+                  info.instalado.serie_i = $('#serie_i').val();
+                  info.instalado.economico_i = $('#economico_i').val();
+                  info.instalado.tipo_i = $('#tipo_i').val();
+                  info.instalado.tipo2_i = $('#tipo2_i').val();
+                  info.instalado.litros_i = $('#litros_i').val();
+                  info.instalado.peso_i = $('#peso_i').val();
+                  info.instalado.estado_i = $('#estado_i').val();
+                  $.post("{{urlFor('registrar')}}",info).done(function(){
+                    $('#registrar').addClass('disabled');
+                    $.notify({
+                      message:"registro exitoso"
+                    },{
+                      type:"success"
+                    });
+                    location.reload();
+                  }).fail(function(){
+                    $.notify({
+                      message:"ocurrio un error"
+                    },{
+                      type:"danger"
+                    });
                   });
                 });
               });
             });
           });
-        });
+        }
       });
     });
   });
