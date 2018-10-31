@@ -27,7 +27,7 @@ $app->get('/search/',function () use($app){
   $rubro = $_GET['rubro'];
   $texto = $_GET['texto'];
   $datos['all'] = null;
-  if($rubro == "tiempo"){
+  if($rubro == "tiempo" || $rubro == "mes"){
       $tiempo = "'%/".$_GET['texto']."'";
       $st = $app->db->prepare("SELECT r.id,r.fecha,r.ubicacion,r.responsable,r.num_circuito,r.causa,i.id idi,i.fecha fechai,i.ubicacion ubicacioni,i.responsable responsablei,i.num_circuito num_circuitoi ,i.causa causai FROM retirado AS r JOIN instalado AS i ON(r.id_instalado = i.id) WHERE fechai LIKE $tiempo");
       $st->execute();
@@ -43,7 +43,7 @@ $app->get('/search/',function () use($app){
 
 $app->get('/opciones/',function () use($app){
   $rubro = $_GET['rubro'];
-  if ($rubro == "tiempo") {
+  if ($rubro == "tiempo" || $rubro == "mes") {
     // code...
   }else{
     $st = $app->db->prepare("SELECT $rubro FROM retirado");
