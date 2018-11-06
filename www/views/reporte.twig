@@ -1,3 +1,9 @@
 <div class="container">
 <h1>Reporte mensual</h1>
+<button class="btn btn-primary" id="generar">generar</button>
 </div>
+<script type="text/javascript">
+$('#generar').click(function(){
+  window.location.assign("{{urlFor('get-excel')}}");
+});
+</script>

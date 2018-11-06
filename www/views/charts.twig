@@ -1,23 +1,28 @@
-<h1>Total de movimientos por mes</h1>
-<br>
-<div class="row">
-  <canvas id="myChart"></canvas>
-</div>
-<br>
-<h1>Total de movimientos por Transformadores dañados en el año</h1>
-<br>
-<div class="row">
-  <canvas class="col-sm-12" id="myChart2"></canvas>
-</div>
-<h1>Total de movimientos en red en el año</h1>
-<br>
-<div class="row">
-  <canvas class="col-sm-12" id="myChart3"></canvas>
-</div>
-<h1>Total de movimientos por Creación de área nueva en el año</h1>
-<br>
-<div class="row">
-  <canvas class="col-sm-12" id="myChart4"></canvas>
+<div class="charts-container">
+  <div class="chartcont">
+    <div class="chart">
+      <h1>Total de movimientos por mes</h1>
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+  <div class="chartcont">
+    <div class="chart">
+      <h1>Total de movimientos por Transformadores dañados en el año</h1>
+      <canvas class="col-sm-12" id="myChart2"></canvas>
+    </div>
+  </div>
+  <div class="chartcont">
+    <div class="chart">
+      <h1>Total de movimientos en red en el año</h1>
+      <canvas class="col-sm-12" id="myChart3"></canvas>
+    </div>
+  </div>
+  <div class="chartcont">
+    <div class="chart">
+      <h1>Total de movimientos por Creación de área nueva en el año</h1>
+      <canvas class="col-sm-12" id="myChart4"></canvas>
+    </div>
+  </div>
 </div>
 <script type="text/javascript">
 $.getJSON("{{urlFor('get-grafica')}}",{year:$('#year').val()},function(data){
@@ -95,3 +100,21 @@ $.getJSON("{{urlFor('get-grafica')}}",{year:$('#year').val()},function(data){
 
 });
 </script>
+<style media="screen">
+  .charts-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    max-height: 200px;
+    align-items: center;
+  }
+  .chartcont{
+    width: 850px;
+    height: 8500px;
+  }
+  .chart{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+</style>

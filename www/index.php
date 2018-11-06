@@ -27,6 +27,7 @@ $app->get('/500/', function() use($app){
 include_once CONTROLLERS_DIR.'user.php';
 include_once CONTROLLERS_DIR.'graficas.php';
 include_once CONTROLLERS_DIR.'paginas.php';
+include_once CONTROLLERS_DIR.'excel.php';
 $app->run();
 
 ?>

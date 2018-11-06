@@ -333,3 +333,1081 @@
 - 08:58:46.484 DEBUG: Calling CefQuitMessageLoop()
 - 08:58:46.593 INFO: Ended application
 - 08:58:46.593 INFO: --------------------------------------------------------
+- 10:21:19.094 INFO: --------------------------------------------------------
+- 10:21:19.110 INFO: Started application
+- 10:21:19.125 INFO: Logging to: C:\Users\Mothy\Documents\proyectoNestor\debug.log
+- 10:21:19.125 INFO: Log level = DEBUG4
+- 10:21:19.125 INFO: Starting Mongoose 3.9c web server
+- 10:21:19.125 INFO: WWW directory: C:\Users\Mothy\Documents\proyectoNestor\www
+- 10:21:19.125 INFO: Index files: index.html,index.php
+- 10:21:19.125 INFO: CGI interpreter: C:\Users\Mothy\Documents\proyectoNestor\php\php-cgi.exe
+- 10:21:19.125 INFO: CGI pattern: **.php$
+- 10:21:19.125 INFO: Hide files patterns: 
+- 10:21:19.125 INFO: CGI environment variables set: TMP=C:\Users\Mothy\AppData\Local\Temp\,TEMP=C:\Users\Mothy\AppData\Local\Temp\,TMPDIR=C:\Users\Mothy\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 10:21:19.125 INFO: Web server url: http://127.0.0.1:5000/
+- 10:21:19.141 INFO: remote_debugging_port = 57626
+- 10:21:19.141 DEBUG: Command line string for the browser process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --remote-debugging-port=57626
+- 10:21:27.078 DEBUG: App::OnContextInitialized()
+- 10:21:27.078 DEBUG: Window max width/height = 1286/680
+- 10:21:27.078 DEBUG: GetBrowserWindow(): not found, hwnd = 66372
+- 10:21:27.078 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 10:21:27.438 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 10:21:27.438 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 10:21:27.438 DEBUG: BrowserWindow::CreateBrowserControl()
+- 10:21:27.438 DEBUG: StoreBrowserWindow(): hwnd = 66372
+- 10:21:27.328 DEBUG: Command line string for the gpu-process process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x9874 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=24.20.13011.1009 --gpu-driver-date=8-27-2018 --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --service-request-channel-token=693F9A3D42B49520D6C07ECE72A47179 --mojo-platform-channel-handle=1768 /prefetch:2
+- 10:21:28.188 DEBUG: ClientHandler::OnAfterCreated()
+- 10:21:28.188 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 10:21:29.797 DEBUG: OnLoadingStateChange: loading=1, url=
+- 10:21:29.000 DEBUG: Command line string for the renderer process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=renderer --no-sandbox --primordial-pipe-token=30BC59C201D9E4E8EE825FB926CDB122 --lang=en-US --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=30BC59C201D9E4E8EE825FB926CDB122 --renderer-client-id=3 --mojo-platform-channel-handle=2120 /prefetch:1
+[1105/102140.975:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 10:22:04.782 DEBUG: OnBrowserCreated()
+- 10:22:42.125 INFO: GET 200 /
+- 10:22:43.328 INFO: GET 304 /web/css/animate.css
+- 10:22:43.328 INFO: GET 304 /web/css/bootstrap-datepicker.min.css
+- 10:22:43.469 INFO: GET 304 /web/js/bootstrap-datepicker.js
+- 10:22:43.469 INFO: GET 304 /web/js/popper.min.js
+- 10:22:43.469 INFO: GET 304 /web/js/bootstrap-notify.min.js
+- 10:22:43.469 INFO: GET 304 /web/js/sweetalert2.all.min.js
+- 10:22:43.469 INFO: GET 304 /web/js/jquery.js
+- 10:22:45.235 DEBUG: OnContextCreated()
+- 10:22:49.875 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/
+- 10:22:49.672 INFO: GET 200 /dashboard/?vista=inicio
+- 10:22:51.828 INFO: GET 200 /getPagina/?pagina=1
+- 10:23:15.110 INFO: GET 200 /
+- 10:23:15.610 INFO: GET 200 /web/css/bootstrap-datepicker.min.css
+- 10:23:15.610 INFO: GET 200 /web/css/animate.css
+- 10:23:15.657 INFO: GET 200 /web/css/bootstrap.min.css
+- 10:23:15.688 INFO: GET 200 /web/js/jquery.js
+- 10:23:15.703 INFO: GET 200 /web/js/sweetalert2.all.min.js
+- 10:23:16.078 INFO: GET 200 /web/js/popper.min.js
+- 10:23:16.094 INFO: GET 200 /web/js/bootstrap-datepicker.js
+- 10:23:16.157 INFO: GET 200 /web/js/bootstrap.min.js
+- 10:23:16.188 INFO: GET 200 /web/js/bootstrap-notify.min.js
+- 10:23:17.438 INFO: GET 500 /favicon.ico
+- 10:23:17.438 INFO: GET 200 /dashboard/?vista=inicio
+- 10:23:18.969 INFO: GET 200 /getPagina/?pagina=1
+- 10:46:55.782 INFO: GET 200 /dashboard/?vista=graficas
+- 10:46:55.782 INFO: GET 500 /favicon.ico
+- 10:46:55.891 INFO: GET 200 /dashboard/?vista=graficas
+- 10:46:55.078 INFO: GET 304 /web/js/chart.min.js
+- 10:46:55.360 INFO: GET 500 /favicon.ico
+- 10:46:55.516 INFO: GET 304 /web/js/chart.min.js
+- 10:47:00.860 INFO: GET 200 /get-grafica/?year=2018
+- 10:47:00.172 INFO: GET 200 /getcharts/
+- 10:47:00.766 INFO: GET 200 /get-grafica/?year=2018
+- 10:49:57.782 INFO: GET 200 /get-grafica/?year=2018
+- 10:49:57.125 INFO: GET 200 /getcharts/
+- 10:49:57.360 INFO: GET 200 /get-grafica/?year=2018
+- 10:50:10.360 INFO: GET 200 /get-grafica/?year=2018
+- 10:50:10.688 INFO: GET 200 /getcharts/
+- 10:50:11.328 INFO: GET 200 /get-grafica/?year=2018
+- 10:50:38.469 INFO: GET 200 /get-grafica/?year=2018
+- 10:50:39.782 INFO: GET 200 /getcharts/
+- 10:50:39.016 INFO: GET 200 /get-grafica/?year=2018
+- 10:51:14.391 INFO: GET 200 /get-grafica/?year=2018
+- 10:51:14.688 INFO: GET 200 /getcharts/
+- 10:51:15.250 INFO: GET 200 /get-grafica/?year=2018
+- 10:51:28.453 INFO: GET 200 /get-grafica/?year=2018
+- 10:51:28.766 INFO: GET 200 /getcharts/
+- 10:51:29.000 INFO: GET 200 /get-grafica/?year=2018
+- 10:51:37.985 INFO: GET 200 /get-grafica/?year=2018
+- 10:51:37.266 INFO: GET 200 /getcharts/
+- 10:51:38.813 INFO: GET 200 /get-grafica/?year=2018
+- 10:52:21.657 INFO: GET 200 /get-grafica/?year=2018
+- 10:52:22.953 INFO: GET 200 /getcharts/
+- 10:52:22.172 INFO: GET 200 /get-grafica/?year=2018
+- 10:52:29.157 INFO: GET 200 /get-grafica/?year=2018
+- 10:52:29.422 INFO: GET 200 /getcharts/
+- 10:52:29.672 INFO: GET 200 /get-grafica/?year=2018
+- 10:52:38.203 INFO: GET 200 /get-grafica/?year=2018
+- 10:52:39.828 INFO: GET 200 /getcharts/
+- 10:52:39.063 INFO: GET 200 /get-grafica/?year=2018
+- 10:52:46.110 INFO: GET 200 /get-grafica/?year=2018
+- 10:52:46.375 INFO: GET 200 /getcharts/
+- 10:52:46.641 INFO: GET 200 /get-grafica/?year=2018
+- 10:52:59.547 INFO: GET 200 /get-grafica/?year=2018
+- 10:52:59.766 INFO: GET 200 /getcharts/
+- 10:53:00.297 INFO: GET 200 /get-grafica/?year=2018
+- 10:55:45.422 INFO: GET 200 /get-grafica/?year=2018
+- 10:55:45.735 INFO: GET 200 /getcharts/
+- 10:55:46.360 INFO: GET 200 /get-grafica/?year=2018
+- 10:55:57.047 INFO: GET 200 /get-grafica/?year=2018
+- 10:55:57.375 INFO: GET 200 /getcharts/
+- 10:55:57.688 INFO: GET 200 /get-grafica/?year=2018
+- 10:57:29.110 INFO: GET 200 /get-grafica/?year=2018
+- 10:57:29.391 INFO: GET 200 /getcharts/
+- 10:57:29.688 INFO: GET 200 /get-grafica/?year=2018
+- 10:57:43.172 INFO: GET 200 /get-grafica/?year=2018
+- 10:57:43.500 INFO: GET 200 /getcharts/
+- 10:57:43.688 INFO: GET 200 /get-grafica/?year=2018
+- 10:57:54.641 INFO: GET 200 /get-grafica/?year=2018
+- 10:57:55.875 INFO: GET 200 /getcharts/
+- 10:57:55.391 INFO: GET 200 /get-grafica/?year=2018
+- 10:58:10.485 INFO: GET 200 /get-grafica/?year=2018
+- 10:58:11.813 INFO: GET 200 /getcharts/
+- 10:58:11.063 INFO: GET 200 /get-grafica/?year=2018
+- 10:58:26.094 INFO: GET 200 /get-grafica/?year=2018
+- 10:58:26.453 INFO: GET 200 /getcharts/
+- 10:58:26.766 INFO: GET 200 /get-grafica/?year=2018
+- 10:58:42.766 INFO: GET 200 /get-grafica/?year=2018
+- 10:58:43.032 INFO: GET 200 /getcharts/
+- 10:58:43.625 INFO: GET 200 /get-grafica/?year=2018
+- 10:59:32.078 INFO: GET 200 /get-grafica/?year=2018
+- 10:59:32.360 INFO: GET 200 /getcharts/
+- 10:59:32.625 INFO: GET 200 /get-grafica/?year=2018
+- 10:59:50.360 INFO: GET 200 /get-grafica/?year=2018
+- 10:59:50.641 INFO: GET 200 /getcharts/
+- 10:59:51.188 INFO: GET 200 /get-grafica/?year=2018
+- 11:00:26.860 INFO: GET 200 /get-grafica/?year=2018
+- 11:00:26.125 INFO: GET 200 /getcharts/
+- 11:00:26.438 INFO: GET 200 /get-grafica/?year=2018
+- 11:00:42.000 INFO: GET 200 /get-grafica/?year=2018
+- 11:00:42.266 INFO: GET 200 /getcharts/
+- 11:00:42.563 INFO: GET 200 /get-grafica/?year=2018
+- 11:00:51.438 INFO: GET 200 /get-grafica/?year=2018
+- 11:00:52.000 INFO: GET 200 /getcharts/
+- 11:00:52.235 INFO: GET 200 /get-grafica/?year=2018
+- 11:01:02.703 INFO: GET 200 /get-grafica/?year=2018
+- 11:01:03.016 INFO: GET 200 /getcharts/
+- 11:01:03.219 INFO: GET 200 /get-grafica/?year=2018
+- 11:01:39.516 INFO: GET 200 /get-grafica/?year=2018
+- 11:01:40.922 INFO: GET 200 /getcharts/
+- 11:01:40.453 INFO: GET 200 /get-grafica/?year=2018
+- 11:02:01.844 INFO: GET 200 /get-grafica/?year=2018
+- 11:02:01.172 INFO: GET 200 /getcharts/
+- 11:02:01.407 INFO: GET 200 /get-grafica/?year=2018
+- 11:02:11.203 INFO: GET 200 /get-grafica/?year=2018
+- 11:02:11.469 INFO: GET 200 /getcharts/
+- 11:02:12.985 INFO: GET 200 /get-grafica/?year=2018
+- 11:02:22.625 INFO: GET 200 /get-grafica/?year=2018
+- 11:02:23.938 INFO: GET 200 /getcharts/
+- 11:02:23.235 INFO: GET 200 /get-grafica/?year=2018
+- 11:05:02.703 INFO: GET 200 /get-grafica/?year=2018
+- 11:05:03.016 INFO: GET 200 /getcharts/
+- 11:05:03.235 INFO: GET 200 /get-grafica/?year=2018
+- 11:06:07.594 INFO: GET 200 /get-grafica/?year=2018
+- 11:06:08.891 INFO: GET 200 /getcharts/
+- 11:06:08.422 INFO: GET 200 /get-grafica/?year=2018
+- 11:06:21.047 INFO: GET 200 /get-grafica/?year=2018
+- 11:06:21.297 INFO: GET 200 /getcharts/
+- 11:06:21.578 INFO: GET 200 /get-grafica/?year=2018
+- 11:06:42.032 INFO: GET 200 /get-grafica/?year=2018
+- 11:06:42.344 INFO: GET 200 /getcharts/
+- 11:06:42.594 INFO: GET 200 /get-grafica/?year=2018
+- 11:07:43.672 INFO: GET 500 /favicon.ico
+- 11:07:43.672 INFO: GET 200 /dashboard/?vista=reporte
+[1105/110855.954:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 11:08:55.735 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/
+- 11:08:55.735 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 11:08:56.016 INFO: GET 200 /dashboard/?vista=graficas
+[1105/110856.243:INFO:CONSOLE(2)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://127.0.0.1:5000/web/js/jquery.js (2)
+- 11:08:56.016 INFO: GET 304 /web/js/chart.min.js
+- 11:09:03.266 INFO: GET 200 /get-grafica/?year=2018
+- 11:09:03.625 INFO: GET 200 /getcharts/
+- 11:09:04.922 INFO: GET 200 /get-grafica/?year=2018
+- 11:12:34.922 INFO: GET 200 /
+- 11:12:34.547 INFO: GET 500 /favicon.ico
+- 11:12:34.547 INFO: GET 200 /dashboard/?vista=inicio
+- 11:12:35.157 INFO: GET 200 /getPagina/?pagina=1
+- 11:12:36.813 INFO: GET 200 /dashboard/?vista=reporte
+- 11:12:36.094 INFO: GET 500 /favicon.ico
+- 11:12:55.313 INFO: GET 200 /dashboard/?vista=reporte
+- 11:12:55.313 INFO: GET 500 /favicon.ico
+- 11:14:28.532 DEBUG: WM_DESTROY
+- 11:14:28.532 DEBUG: RemoveBrowserWindow(): hwnd = 66372
+- 11:14:28.532 INFO: Stopping Mongoose web server
+- 11:14:28.532 DEBUG: Mongoose webserver stopped immediately
+- 11:14:28.532 DEBUG: OnBeforeClose() hwnd=66378
+- 11:14:28.532 DEBUG: RemoveBrowserWindow(): hwnd = 66378
+- 11:14:28.532 DEBUG: GetBrowserWindow(): not found, hwnd = 66378
+- 11:14:28.532 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 11:14:28.532 DEBUG: Calling CefQuitMessageLoop()
+- 11:14:28.672 INFO: Ended application
+- 11:14:28.672 INFO: --------------------------------------------------------
+- 11:22:36.000 INFO: --------------------------------------------------------
+- 11:22:36.000 INFO: Started application
+- 11:22:36.000 INFO: Logging to: C:\Users\Mothy\Documents\proyectoNestor\debug.log
+- 11:22:36.000 INFO: Log level = DEBUG4
+- 11:22:36.000 INFO: Starting Mongoose 3.9c web server
+- 11:22:36.000 INFO: WWW directory: C:\Users\Mothy\Documents\proyectoNestor\www
+- 11:22:36.000 INFO: Index files: index.html,index.php
+- 11:22:36.000 INFO: CGI interpreter: C:\Users\Mothy\Documents\proyectoNestor\php\php-cgi.exe
+- 11:22:36.000 INFO: CGI pattern: **.php$
+- 11:22:36.000 INFO: Hide files patterns: 
+- 11:22:36.000 INFO: CGI environment variables set: TMP=C:\Users\Mothy\AppData\Local\Temp\,TEMP=C:\Users\Mothy\AppData\Local\Temp\,TMPDIR=C:\Users\Mothy\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 11:22:36.015 INFO: Web server url: http://127.0.0.1:5000/
+- 11:22:36.015 INFO: remote_debugging_port = 58166
+- 11:22:36.015 DEBUG: Command line string for the browser process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --remote-debugging-port=58166
+- 11:22:36.125 DEBUG: App::OnContextInitialized()
+- 11:22:36.125 DEBUG: Window max width/height = 1286/680
+- 11:22:36.125 DEBUG: GetBrowserWindow(): not found, hwnd = 262968
+- 11:22:36.125 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 11:22:36.125 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 11:22:36.125 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 11:22:36.125 DEBUG: BrowserWindow::CreateBrowserControl()
+- 11:22:36.125 DEBUG: StoreBrowserWindow(): hwnd = 262968
+- 11:22:36.265 DEBUG: ClientHandler::OnAfterCreated()
+- 11:22:36.265 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 11:22:36.296 DEBUG: OnLoadingStateChange: loading=1, url=
+- 11:22:37.000 DEBUG: Command line string for the renderer process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=renderer --no-sandbox --primordial-pipe-token=81CDA6F1A0F92721D83C61D0DD3B799B --lang=en-US --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=81CDA6F1A0F92721D83C61D0DD3B799B --renderer-client-id=3 --mojo-platform-channel-handle=2292 /prefetch:1
+- 11:22:37.016 DEBUG: Command line string for the gpu-process process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x9874 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=24.20.13011.1009 --gpu-driver-date=8-27-2018 --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --service-request-channel-token=14A1DCDF72E5825C105788EEB02C853C --mojo-platform-channel-handle=1752 /prefetch:2
+[1105/112237.319:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 11:22:37.703 INFO: GET 200 /get-excel
+- 11:22:37.844 DEBUG: OnBrowserCreated()
+- 11:22:37.359 INFO: GET 200 /favicon.ico
+- 11:22:39.656 INFO: GET 200 /
+- 11:22:39.687 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/
+- 11:23:11.640 INFO: GET 200 /get-excel
+- 11:23:11.062 INFO: GET 200 /favicon.ico
+- 11:24:19.984 INFO: GET 200 /get-excel
+- 11:24:20.375 INFO: GET 500 /favicon.ico
+- 11:24:32.968 INFO: GET 500 /get-excel
+- 11:24:33.468 INFO: GET 500 /favicon.ico
+- 11:24:46.609 INFO: GET 200 /get-excel
+- 11:24:46.031 INFO: GET 500 /favicon.ico
+- 11:25:45.343 INFO: GET 200 /get-excel
+- 11:25:46.781 INFO: GET 500 /favicon.ico
+- 11:26:00.250 INFO: GET 200 /get-excel
+- 11:26:01.656 INFO: GET 500 /favicon.ico
+- 11:26:13.468 INFO: GET 200 /get-excel
+- 11:26:13.875 INFO: GET 500 /favicon.ico
+- 11:26:58.484 INFO: GET 200 /get-excel
+- 11:26:58.906 INFO: GET 500 /favicon.ico
+- 11:27:17.609 INFO: GET 200 /get-excel
+- 11:27:17.140 INFO: GET 500 /favicon.ico
+- 11:28:28.421 INFO: GET 200 /get-excel
+- 11:28:28.953 INFO: GET 500 /favicon.ico
+- 11:28:46.281 DEBUG: F5 pressed, reloading page
+- 11:28:46.281 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/
+- 11:28:47.593 INFO: GET 200 /
+- 11:28:47.593 INFO: GET 200 /web/css/bootstrap-datepicker.min.css
+- 11:28:47.609 INFO: GET 200 /web/js/sweetalert2.all.min.js
+- 11:28:47.609 INFO: GET 200 /web/js/bootstrap-notify.min.js
+- 11:28:47.609 INFO: GET 200 /web/css/animate.css
+- 11:28:47.609 INFO: GET 200 /web/js/jquery.js
+- 11:28:47.609 INFO: GET 200 /web/css/bootstrap.min.css
+- 11:28:47.172 DEBUG: OnContextCreated()
+- 11:28:47.609 INFO: GET 200 /web/js/bootstrap.min.js
+- 11:28:47.781 INFO: GET 200 /web/js/bootstrap-datepicker.js
+- 11:28:47.781 INFO: GET 200 /web/js/popper.min.js
+- 11:28:47.000 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/
+- 11:28:47.328 INFO: GET 200 /dashboard/?vista=inicio
+- 11:28:48.609 INFO: GET 200 /getPagina/?pagina=1
+- 11:34:28.906 INFO: GET 200 /get-excel
+- 11:34:29.484 INFO: GET 500 /favicon.ico
+- 11:35:41.875 INFO: GET 200 /get-excel
+[1105/113554.085:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 11:35:54.453 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/
+- 11:35:54.453 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 11:35:54.703 INFO: GET 200 /dashboard/?vista=reporte
+[1105/113720.652:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 11:37:20.015 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 11:37:20.015 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 11:37:20.328 INFO: GET 200 /dashboard/?vista=reporte
+- 11:37:22.765 INFO: GET 200 /get-excel/
+- 11:37:24.875 INFO: GET 200 /get-excel/
+- 11:37:24.218 INFO: GET 200 /get-excel/
+- 11:37:25.546 INFO: GET 200 /get-excel/
+- 11:37:25.953 INFO: GET 200 /get-excel/
+- 11:37:25.250 INFO: GET 200 /get-excel/
+- 11:37:36.578 INFO: GET 200 /get-excel/
+- 11:37:36.984 INFO: GET 200 /get-excel/
+- 11:37:48.437 INFO: GET 200 /get-excel/
+- 11:37:48.765 INFO: GET 200 /get-excel/
+[1105/113750.245:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 11:37:50.609 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 11:37:50.609 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 11:37:50.906 INFO: GET 200 /dashboard/?vista=reporte
+[1105/113750.687:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+[1105/113750.892:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 11:37:51.484 INFO: GET 200 /dashboard/?vista=reporte
+- 11:37:51.156 INFO: GET 200 /dashboard/?vista=reporte
+- 11:37:52.375 INFO: GET 200 /get-excel/
+- 11:39:51.453 INFO: GET 500 /favicon.ico
+- 11:39:51.453 INFO: GET 200 /getPagina/?pagina=1
+- 11:39:52.734 INFO: GET 500 /favicon.ico
+- 11:39:52.734 INFO: GET 200 /dashboard/?vista=reporte
+- 11:39:53.015 INFO: GET 200 /get-excel/
+[1105/114006.871:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 11:40:06.234 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 11:40:06.250 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 11:40:07.500 INFO: GET 200 /dashboard/?vista=reporte
+[1105/114007.916:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 11:40:07.281 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 11:40:07.281 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 11:40:08.609 INFO: GET 200 /dashboard/?vista=reporte
+- 11:40:09.156 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 11:40:10.562 INFO: GET 200 /get-excel/
+- 11:40:10.593 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 11:40:10.593 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 11:40:10.656 INFO: About to download a file: file.xlsx
+- 11:40:16.500 INFO: Download was cancelled
+- 11:40:17.656 DEBUG: WM_DESTROY
+- 11:40:17.656 DEBUG: RemoveBrowserWindow(): hwnd = 262968
+- 11:40:17.656 INFO: Stopping Mongoose web server
+- 11:40:17.656 DEBUG: Mongoose webserver stopped immediately
+- 11:40:17.656 DEBUG: OnBeforeClose() hwnd=66816
+- 11:40:17.656 DEBUG: RemoveBrowserWindow(): hwnd = 66816
+- 11:40:17.656 DEBUG: GetBrowserWindow(): not found, hwnd = 66816
+- 11:40:17.656 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 11:40:17.656 DEBUG: Calling CefQuitMessageLoop()
+- 11:40:17.953 INFO: Ended application
+- 11:40:17.953 INFO: --------------------------------------------------------
+- 22:26:30.016 INFO: --------------------------------------------------------
+- 22:26:30.047 INFO: Started application
+- 22:26:30.047 INFO: Logging to: C:\Users\Mothy\Documents\proyectoNestor\debug.log
+- 22:26:30.047 INFO: Log level = DEBUG4
+- 22:26:30.047 INFO: Starting Mongoose 3.9c web server
+- 22:26:30.047 INFO: WWW directory: C:\Users\Mothy\Documents\proyectoNestor\www
+- 22:26:30.047 INFO: Index files: index.html,index.php
+- 22:26:30.047 INFO: CGI interpreter: C:\Users\Mothy\Documents\proyectoNestor\php\php-cgi.exe
+- 22:26:30.047 INFO: CGI pattern: **.php$
+- 22:26:30.047 INFO: Hide files patterns: 
+- 22:26:30.047 INFO: CGI environment variables set: TMP=C:\Users\Mothy\AppData\Local\Temp\,TEMP=C:\Users\Mothy\AppData\Local\Temp\,TMPDIR=C:\Users\Mothy\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 22:26:30.063 INFO: Web server url: http://127.0.0.1:5000/
+- 22:26:30.063 INFO: remote_debugging_port = 65474
+- 22:26:30.063 DEBUG: Command line string for the browser process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --remote-debugging-port=65474
+- 22:26:32.360 DEBUG: App::OnContextInitialized()
+- 22:26:32.360 DEBUG: Window max width/height = 1286/680
+- 22:26:32.360 DEBUG: GetBrowserWindow(): not found, hwnd = 132298
+- 22:26:32.360 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 22:26:32.391 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 22:26:32.391 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 22:26:32.391 DEBUG: BrowserWindow::CreateBrowserControl()
+- 22:26:32.391 DEBUG: StoreBrowserWindow(): hwnd = 132298
+- 22:26:32.516 DEBUG: ClientHandler::OnAfterCreated()
+- 22:26:32.516 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 22:26:32.547 DEBUG: OnLoadingStateChange: loading=1, url=
+- 22:26:34.016 DEBUG: Command line string for the gpu-process process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x9874 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=24.20.13011.1009 --gpu-driver-date=8-27-2018 --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --service-request-channel-token=85DA8F26F8D3DF61681D851CD0FC2AC3 --mojo-platform-channel-handle=1700 /prefetch:2
+- 22:26:34.000 DEBUG: Command line string for the renderer process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=renderer --no-sandbox --primordial-pipe-token=9DFEFACAC1F9DD819BD619CB59434986 --lang=en-US --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=9DFEFACAC1F9DD819BD619CB59434986 --renderer-client-id=3 --mojo-platform-channel-handle=2188 /prefetch:1
+- 22:26:34.204 DEBUG: OnBrowserCreated()
+[1105/222634.923:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 22:26:43.688 INFO: GET 200 /
+- 22:26:45.016 DEBUG: OnContextCreated()
+- 22:26:47.938 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/
+- 22:26:48.266 INFO: GET 200 /dashboard/?vista=inicio
+- 22:26:49.047 INFO: GET 200 /getPagina/?pagina=1
+- 23:13:31.844 INFO: GET 200 /
+- 23:13:32.282 INFO: GET 500 /favicon.ico
+- 23:13:32.282 INFO: GET 200 /dashboard/?vista=inicio
+- 23:13:33.188 INFO: GET 200 /getPagina/?pagina=1
+- 23:13:52.828 INFO: GET 500 /favicon.ico
+- 23:13:52.828 INFO: GET 200 /dashboard/?vista=reporte
+- 23:17:06.532 INFO: GET 200 /get-excel
+- 23:17:07.282 INFO: GET 500 /favicon.ico
+[1105/232355.950:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 23:23:55.719 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/
+- 23:23:55.735 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 23:23:56.235 INFO: GET 200 /dashboard/?vista=reporte
+- 23:23:57.375 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 23:24:02.891 INFO: GET 200 /get-excel/
+- 23:24:02.953 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 23:24:02.953 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 23:24:02.032 INFO: About to download a file: file.xlsx
+- 23:24:09.735 INFO: Download completed, saved to: C:\Users\Mothy\Desktop\file.xlsx
+- 23:26:49.266 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 23:26:49.750 INFO: GET 200 /get-excel/
+- 23:26:50.000 DEBUG: OnContextCreated()
+- 23:26:50.953 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/get-excel/
+- 23:27:17.188 DEBUG: F5 pressed, reloading page
+- 23:27:17.188 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/get-excel/
+- 23:27:18.782 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 23:27:18.782 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/get-excel/
+- 23:27:18.782 INFO: About to download a file: file.xlsx
+- 23:27:18.797 INFO: GET 200 /get-excel/
+- 23:27:24.407 DEBUG: GetBrowserWindow(): not found, hwnd = 198532
+- 23:27:24.516 DEBUG: GetBrowserWindow(): not found, hwnd = 198532
+- 23:27:24.625 DEBUG: GetBrowserWindow(): not found, hwnd = 198532
+- 23:27:24.735 DEBUG: GetBrowserWindow(): not found, hwnd = 198532
+- 23:27:25.844 DEBUG: GetBrowserWindow(): not found, hwnd = 198532
+- 23:27:25.953 DEBUG: GetBrowserWindow(): not found, hwnd = 198532
+- 23:27:25.063 DEBUG: GetBrowserWindow(): not found, hwnd = 198532
+- 23:27:25.172 DEBUG: GetBrowserWindow(): not found, hwnd = 198532
+- 23:27:25.282 DEBUG: GetBrowserWindow(): not found, hwnd = 198532
+- 23:27:25.391 DEBUG: GetBrowserWindow(): not found, hwnd = 198532
+- 23:27:25.500 DEBUG: GetBrowserWindow(): not found, hwnd = 198532
+- 23:27:25.610 DEBUG: GetBrowserWindow(): not found, hwnd = 198532
+- 23:27:26.422 INFO: Download completed, saved to: C:\Users\Mothy\Desktop\file.xlsx
+- 23:27:52.000 DEBUG: WM_DESTROY
+- 23:27:52.000 DEBUG: RemoveBrowserWindow(): hwnd = 132298
+- 23:27:52.000 INFO: Stopping Mongoose web server
+- 23:27:52.000 DEBUG: Mongoose webserver stopped immediately
+- 23:27:52.000 DEBUG: OnBeforeClose() hwnd=132290
+- 23:27:52.000 DEBUG: RemoveBrowserWindow(): hwnd = 132290
+- 23:27:52.000 DEBUG: GetBrowserWindow(): not found, hwnd = 132290
+- 23:27:52.000 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 23:27:52.000 DEBUG: Calling CefQuitMessageLoop()
+- 23:27:52.516 DEBUG: OnBrowserDestroyed()
+- 23:27:53.172 INFO: Ended application
+- 23:27:53.172 INFO: --------------------------------------------------------
+- 23:27:53.000 INFO: --------------------------------------------------------
+- 23:27:53.000 INFO: Started application
+- 23:27:53.000 INFO: Logging to: C:\Users\Mothy\Documents\proyectoNestor\debug.log
+- 23:27:53.000 INFO: Log level = DEBUG4
+- 23:27:53.000 INFO: Starting Mongoose 3.9c web server
+- 23:27:53.000 INFO: WWW directory: C:\Users\Mothy\Documents\proyectoNestor\www
+- 23:27:53.000 INFO: Index files: index.html,index.php
+- 23:27:53.000 INFO: CGI interpreter: C:\Users\Mothy\Documents\proyectoNestor\php\php-cgi.exe
+- 23:27:53.000 INFO: CGI pattern: **.php$
+- 23:27:53.000 INFO: Hide files patterns: 
+- 23:27:53.000 INFO: CGI environment variables set: TMP=C:\Users\Mothy\AppData\Local\Temp\,TEMP=C:\Users\Mothy\AppData\Local\Temp\,TMPDIR=C:\Users\Mothy\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 23:27:53.031 INFO: Web server url: http://127.0.0.1:5000/
+- 23:27:53.047 INFO: remote_debugging_port = 60944
+- 23:27:53.047 DEBUG: Command line string for the browser process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --remote-debugging-port=60944
+- 23:27:54.203 DEBUG: App::OnContextInitialized()
+- 23:27:54.203 DEBUG: Window max width/height = 1286/680
+- 23:27:54.203 DEBUG: GetBrowserWindow(): not found, hwnd = 263370
+- 23:27:54.203 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 23:27:54.203 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 23:27:54.203 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 23:27:54.203 DEBUG: BrowserWindow::CreateBrowserControl()
+- 23:27:54.203 DEBUG: StoreBrowserWindow(): hwnd = 263370
+- 23:27:54.328 DEBUG: ClientHandler::OnAfterCreated()
+- 23:27:54.328 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 23:27:54.359 DEBUG: OnLoadingStateChange: loading=1, url=
+- 23:27:54.015 DEBUG: Command line string for the gpu-process process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x9874 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=24.20.13011.1009 --gpu-driver-date=8-27-2018 --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --service-request-channel-token=E06EC130DBE3E8315EDC9CDEC22611B4 --mojo-platform-channel-handle=1788 /prefetch:2
+- 23:27:54.000 DEBUG: Command line string for the renderer process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=renderer --no-sandbox --primordial-pipe-token=6F2D6B93FDD6589B38271D4048B97D12 --lang=en-US --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=6F2D6B93FDD6589B38271D4048B97D12 --renderer-client-id=3 --mojo-platform-channel-handle=2240 /prefetch:1
+[1105/232754.502:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 23:27:54.140 DEBUG: OnBrowserCreated()
+- 23:27:56.343 INFO: GET 200 /
+- 23:27:56.781 DEBUG: OnContextCreated()
+- 23:27:56.703 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/
+- 23:27:57.187 INFO: GET 200 /dashboard/?vista=inicio
+- 23:27:57.672 INFO: GET 200 /getPagina/?pagina=1
+[1105/232759.355:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 23:27:59.515 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/
+- 23:27:59.531 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 23:27:59.984 INFO: GET 200 /dashboard/?vista=reporte
+- 23:28:01.000 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 23:28:02.578 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 23:28:02.578 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 23:28:02.578 INFO: About to download a file: file.xlsx
+- 23:28:02.593 INFO: GET 200 /get-excel/
+- 23:28:06.390 DEBUG: GetBrowserWindow(): not found, hwnd = 460644
+- 23:28:06.484 DEBUG: GetBrowserWindow(): not found, hwnd = 460644
+- 23:28:06.593 DEBUG: GetBrowserWindow(): not found, hwnd = 460644
+- 23:28:06.703 DEBUG: GetBrowserWindow(): not found, hwnd = 460644
+- 23:28:06.812 DEBUG: GetBrowserWindow(): not found, hwnd = 460644
+- 23:28:06.922 DEBUG: GetBrowserWindow(): not found, hwnd = 460644
+- 23:28:06.031 DEBUG: GetBrowserWindow(): not found, hwnd = 460644
+- 23:28:06.140 DEBUG: GetBrowserWindow(): not found, hwnd = 460644
+- 23:28:07.250 DEBUG: GetBrowserWindow(): not found, hwnd = 460644
+- 23:28:07.359 DEBUG: GetBrowserWindow(): not found, hwnd = 460644
+- 23:28:07.468 DEBUG: GetBrowserWindow(): not found, hwnd = 460644
+- 23:28:07.578 DEBUG: GetBrowserWindow(): not found, hwnd = 460644
+- 23:28:07.687 DEBUG: GetBrowserWindow(): not found, hwnd = 460644
+- 23:28:08.422 INFO: Download completed, saved to: C:\Users\Mothy\Desktop\file.xlsx
+- 23:29:55.937 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 23:29:56.453 INFO: GET 500 /get-excel/
+- 23:29:56.890 DEBUG: OnContextCreated()
+- 23:29:56.625 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/get-excel/
+- 23:30:48.984 DEBUG: WM_DESTROY
+- 23:30:48.984 DEBUG: RemoveBrowserWindow(): hwnd = 263370
+- 23:30:48.984 INFO: Stopping Mongoose web server
+- 23:30:48.984 DEBUG: Mongoose webserver stopped immediately
+- 23:30:48.984 DEBUG: OnBeforeClose() hwnd=197846
+- 23:30:48.984 DEBUG: RemoveBrowserWindow(): hwnd = 197846
+- 23:30:48.984 DEBUG: GetBrowserWindow(): not found, hwnd = 197846
+- 23:30:48.984 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 23:30:48.984 DEBUG: Calling CefQuitMessageLoop()
+- 23:30:48.109 INFO: Ended application
+- 23:30:48.109 INFO: --------------------------------------------------------
+- 23:30:50.000 INFO: --------------------------------------------------------
+- 23:30:50.000 INFO: Started application
+- 23:30:50.000 INFO: Logging to: C:\Users\Mothy\Documents\proyectoNestor\debug.log
+- 23:30:50.000 INFO: Log level = DEBUG4
+- 23:30:50.000 INFO: Starting Mongoose 3.9c web server
+- 23:30:50.000 INFO: WWW directory: C:\Users\Mothy\Documents\proyectoNestor\www
+- 23:30:50.000 INFO: Index files: index.html,index.php
+- 23:30:50.000 INFO: CGI interpreter: C:\Users\Mothy\Documents\proyectoNestor\php\php-cgi.exe
+- 23:30:50.000 INFO: CGI pattern: **.php$
+- 23:30:50.000 INFO: Hide files patterns: 
+- 23:30:50.000 INFO: CGI environment variables set: TMP=C:\Users\Mothy\AppData\Local\Temp\,TEMP=C:\Users\Mothy\AppData\Local\Temp\,TMPDIR=C:\Users\Mothy\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 23:30:50.015 INFO: Web server url: http://127.0.0.1:5000/
+- 23:30:50.015 INFO: remote_debugging_port = 60748
+- 23:30:50.015 DEBUG: Command line string for the browser process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --remote-debugging-port=60748
+- 23:30:50.140 DEBUG: App::OnContextInitialized()
+- 23:30:50.140 DEBUG: Window max width/height = 1286/680
+- 23:30:50.140 DEBUG: GetBrowserWindow(): not found, hwnd = 263360
+- 23:30:50.140 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 23:30:50.156 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 23:30:50.156 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 23:30:50.156 DEBUG: BrowserWindow::CreateBrowserControl()
+- 23:30:50.156 DEBUG: StoreBrowserWindow(): hwnd = 263360
+- 23:30:50.250 DEBUG: ClientHandler::OnAfterCreated()
+- 23:30:50.250 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 23:30:50.281 DEBUG: OnLoadingStateChange: loading=1, url=
+- 23:30:50.016 DEBUG: Command line string for the gpu-process process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x9874 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=24.20.13011.1009 --gpu-driver-date=8-27-2018 --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --service-request-channel-token=67FC457264F2BC1FCADF0FB02366924F --mojo-platform-channel-handle=1692 /prefetch:2
+- 23:30:50.000 DEBUG: Command line string for the renderer process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=renderer --no-sandbox --primordial-pipe-token=C4DBF42962FE9230018930B43C83E450 --lang=en-US --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=C4DBF42962FE9230018930B43C83E450 --renderer-client-id=3 --mojo-platform-channel-handle=2248 /prefetch:1
+[1105/233050.714:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 23:30:50.250 DEBUG: OnBrowserCreated()
+[1105/233050.901:ERROR:block_files.cc(479)] Failed to open C:\Users\Mothy\Documents\proyectoNestor\webcache\Cache\data_3
+[1105/233050.901:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[1105/233050.901:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\Mothy\Documents\proyectoNestor\webcache\Cache to C:\Users\Mothy\Documents\proyectoNestor\webcache\old_Cache_000
+[1105/233050.901:ERROR:disk_cache.cc(132)] Unable to create cache
+- 23:30:52.469 INFO: GET 200 /
+- 23:30:52.094 DEBUG: OnContextCreated()
+- 23:30:52.578 INFO: GET 200 /web/css/bootstrap-datepicker.min.css
+- 23:30:52.578 INFO: GET 200 /web/css/bootstrap.min.css
+- 23:30:52.578 INFO: GET 200 /web/css/animate.css
+- 23:30:52.578 INFO: GET 200 /web/js/sweetalert2.all.min.js
+- 23:30:52.625 INFO: GET 200 /web/js/bootstrap-notify.min.js
+- 23:30:52.656 INFO: GET 200 /web/js/popper.min.js
+- 23:30:52.672 INFO: GET 200 /web/js/bootstrap-datepicker.js
+- 23:30:52.703 INFO: GET 200 /web/js/bootstrap.min.js
+- 23:30:52.703 INFO: GET 200 /web/js/jquery.js
+- 23:30:53.062 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/
+- 23:30:53.640 INFO: GET 200 /dashboard/?vista=inicio
+- 23:30:54.250 INFO: GET 200 /getPagina/?pagina=1
+[1105/233103.536:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 23:31:03.375 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/
+- 23:31:03.375 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 23:31:04.844 INFO: GET 200 /dashboard/?vista=graficas
+[1105/233104.037:INFO:CONSOLE(2)] "Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.", source: http://127.0.0.1:5000/web/js/jquery.js (2)
+- 23:31:04.047 INFO: GET 200 /web/js/chart.min.js
+[1105/233106.592:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 23:31:06.422 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 23:31:06.437 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 23:31:07.906 INFO: GET 200 /dashboard/?vista=reporte
+[1105/233108.223:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 23:31:08.062 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 23:31:08.062 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 23:31:08.578 INFO: GET 200 /dashboard/?vista=graficas
+- 23:31:08.578 INFO: GET 200 /web/js/chart.min.js
+- 23:31:12.969 INFO: GET 200 /get-grafica/?year=2018
+- 23:31:12.500 INFO: GET 200 /getcharts/
+- 23:31:13.953 INFO: GET 200 /get-grafica/?year=2018
+[1105/233117.780:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 23:31:17.625 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 23:31:17.625 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 23:31:18.109 INFO: GET 200 /dashboard/?vista=reporte
+- 23:31:19.172 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 23:31:19.719 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 23:31:19.719 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 23:31:19.719 INFO: About to download a file: file.xlsx
+- 23:31:19.734 INFO: GET 200 /get-excel/
+- 23:31:24.937 INFO: Download completed, saved to: C:\Users\Mothy\Desktop\file.xlsx
+- 23:32:02.390 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 23:32:03.015 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 23:32:03.015 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 23:32:03.015 INFO: About to download a file: file.xlsx
+- 23:32:03.031 INFO: GET 200 /get-excel/
+- 23:32:05.547 DEBUG: GetBrowserWindow(): not found, hwnd = 526046
+- 23:32:05.562 DEBUG: GetBrowserWindow(): not found, hwnd = 526046
+- 23:32:05.672 DEBUG: GetBrowserWindow(): not found, hwnd = 526046
+- 23:32:05.781 DEBUG: GetBrowserWindow(): not found, hwnd = 526046
+- 23:32:06.890 DEBUG: GetBrowserWindow(): not found, hwnd = 526046
+- 23:32:06.000 DEBUG: GetBrowserWindow(): not found, hwnd = 526046
+- 23:32:06.109 DEBUG: GetBrowserWindow(): not found, hwnd = 526046
+- 23:32:06.219 DEBUG: GetBrowserWindow(): not found, hwnd = 526046
+- 23:32:06.328 DEBUG: GetBrowserWindow(): not found, hwnd = 526046
+- 23:32:06.437 DEBUG: GetBrowserWindow(): not found, hwnd = 526046
+- 23:32:06.547 DEBUG: GetBrowserWindow(): not found, hwnd = 526046
+- 23:32:07.265 INFO: Download completed, saved to: C:\Users\Mothy\Desktop\file.xlsx
+- 23:34:36.422 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 23:34:37.078 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 23:34:37.078 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 23:34:37.078 INFO: About to download a file: file.xlsx
+- 23:34:37.094 INFO: GET 200 /get-excel/
+- 23:34:38.422 DEBUG: GetBrowserWindow(): not found, hwnd = 788278
+- 23:34:38.437 DEBUG: GetBrowserWindow(): not found, hwnd = 788278
+- 23:34:38.547 DEBUG: GetBrowserWindow(): not found, hwnd = 788278
+- 23:34:38.656 DEBUG: GetBrowserWindow(): not found, hwnd = 788278
+- 23:34:38.765 DEBUG: GetBrowserWindow(): not found, hwnd = 788278
+- 23:34:39.875 DEBUG: GetBrowserWindow(): not found, hwnd = 788278
+- 23:34:39.984 DEBUG: GetBrowserWindow(): not found, hwnd = 788278
+- 23:34:39.594 DEBUG: GetBrowserWindow(): not found, hwnd = 853814
+- 23:34:39.640 DEBUG: GetBrowserWindow(): not found, hwnd = 853814
+- 23:34:39.750 DEBUG: GetBrowserWindow(): not found, hwnd = 853814
+- 23:34:40.859 DEBUG: GetBrowserWindow(): not found, hwnd = 853814
+- 23:34:40.969 DEBUG: GetBrowserWindow(): not found, hwnd = 853814
+- 23:34:41.844 INFO: Download completed, saved to: C:\Users\Mothy\Desktop\file.xlsx
+- 23:50:53.015 INFO: GET 500 /get-excel
+- 23:50:54.109 INFO: GET 500 /favicon.ico
+- 23:51:02.156 INFO: GET 500 /get-excel
+- 23:51:03.047 INFO: GET 500 /favicon.ico
+- 23:51:18.047 INFO: GET 500 /get-excel
+- 23:51:19.844 INFO: GET 500 /favicon.ico
+- 23:51:28.734 INFO: GET 200 /get-excel
+- 23:51:29.578 INFO: GET 500 /favicon.ico
+- 23:51:44.500 INFO: GET 200 /get-excel
+- 23:51:45.390 INFO: GET 500 /favicon.ico
+- 23:56:21.609 INFO: GET 200 /get-excel
+- 23:56:22.515 INFO: GET 500 /favicon.ico
+- 23:57:43.484 INFO: GET 200 /get-excel
+- 23:57:44.328 INFO: GET 500 /favicon.ico
+- 23:58:10.265 INFO: GET 200 /get-excel
+- 23:58:11.297 INFO: GET 500 /favicon.ico
+- 23:58:33.297 INFO: GET 200 /get-excel
+- 23:58:34.312 INFO: GET 500 /favicon.ico
+- 23:59:19.078 INFO: GET 200 /get-excel
+- 23:59:20.015 INFO: GET 500 /favicon.ico
+- 00:01:33.469 INFO: GET 200 /get-excel
+- 00:01:34.344 INFO: GET 500 /favicon.ico
+- 00:07:26.937 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 00:07:26.500 INFO: GET 200 /get-excel/
+- 00:07:26.141 DEBUG: OnContextCreated()
+- 00:07:26.656 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/get-excel/
+- 00:07:37.234 INFO: GET 200 /get-excel
+- 00:07:38.125 INFO: GET 500 /favicon.ico
+- 00:08:29.890 DEBUG: WM_DESTROY
+- 00:08:29.890 DEBUG: RemoveBrowserWindow(): hwnd = 263360
+- 00:08:29.890 INFO: Stopping Mongoose web server
+- 00:08:29.890 DEBUG: Mongoose webserver stopped immediately
+- 00:08:29.890 DEBUG: OnBeforeClose() hwnd=328906
+- 00:08:29.890 DEBUG: RemoveBrowserWindow(): hwnd = 328906
+- 00:08:29.890 DEBUG: GetBrowserWindow(): not found, hwnd = 328906
+- 00:08:29.890 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 00:08:29.890 DEBUG: Calling CefQuitMessageLoop()
+- 00:08:29.500 DEBUG: OnBrowserDestroyed()
+- 00:08:29.015 INFO: Ended application
+- 00:08:29.015 INFO: --------------------------------------------------------
+- 00:08:31.000 INFO: --------------------------------------------------------
+- 00:08:31.000 INFO: Started application
+- 00:08:31.000 INFO: Logging to: C:\Users\Mothy\Documents\proyectoNestor\debug.log
+- 00:08:31.000 INFO: Log level = DEBUG4
+- 00:08:31.000 INFO: Starting Mongoose 3.9c web server
+- 00:08:31.000 INFO: WWW directory: C:\Users\Mothy\Documents\proyectoNestor\www
+- 00:08:31.000 INFO: Index files: index.html,index.php
+- 00:08:31.000 INFO: CGI interpreter: C:\Users\Mothy\Documents\proyectoNestor\php\php-cgi.exe
+- 00:08:31.000 INFO: CGI pattern: **.php$
+- 00:08:31.000 INFO: Hide files patterns: 
+- 00:08:31.000 INFO: CGI environment variables set: TMP=C:\Users\Mothy\AppData\Local\Temp\,TEMP=C:\Users\Mothy\AppData\Local\Temp\,TMPDIR=C:\Users\Mothy\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 00:08:31.016 INFO: Web server url: http://127.0.0.1:5000/
+- 00:08:31.016 INFO: remote_debugging_port = 60804
+- 00:08:31.031 DEBUG: Command line string for the browser process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --remote-debugging-port=60804
+- 00:08:31.156 DEBUG: App::OnContextInitialized()
+- 00:08:31.156 DEBUG: Window max width/height = 1286/680
+- 00:08:31.156 DEBUG: GetBrowserWindow(): not found, hwnd = 394462
+- 00:08:31.156 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 00:08:31.156 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 00:08:31.156 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 00:08:31.156 DEBUG: BrowserWindow::CreateBrowserControl()
+- 00:08:31.156 DEBUG: StoreBrowserWindow(): hwnd = 394462
+- 00:08:31.297 DEBUG: ClientHandler::OnAfterCreated()
+- 00:08:31.297 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 00:08:31.344 DEBUG: OnLoadingStateChange: loading=1, url=
+- 00:08:31.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x9874 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=24.20.13011.1009 --gpu-driver-date=8-27-2018 --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --service-request-channel-token=876081034BFB8C1E1A8FF42B0A334244 --mojo-platform-channel-handle=1700 /prefetch:2
+- 00:08:31.000 DEBUG: Command line string for the renderer process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=renderer --no-sandbox --primordial-pipe-token=BDCFA33084BA0A87082178CD606558BB --lang=en-US --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=BDCFA33084BA0A87082178CD606558BB --renderer-client-id=3 --mojo-platform-channel-handle=2252 /prefetch:1
+[1106/000831.935:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 00:08:32.562 DEBUG: OnBrowserCreated()
+- 00:08:34.219 INFO: GET 200 /
+- 00:08:34.844 DEBUG: OnContextCreated()
+- 00:08:35.938 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/
+- 00:08:35.531 INFO: GET 200 /dashboard/?vista=inicio
+- 00:08:36.438 INFO: GET 200 /getPagina/?pagina=1
+- 00:21:22.078 INFO: GET 200 /get-excel
+- 00:21:23.985 INFO: GET 500 /favicon.ico
+[1106/002717.168:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 00:27:17.891 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/
+- 00:27:17.906 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 00:27:17.360 INFO: GET 200 /dashboard/?vista=reporte
+[1106/002742.879:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 00:27:42.610 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 00:27:42.610 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 00:27:43.110 INFO: GET 200 /dashboard/?vista=reporte
+- 00:27:44.125 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 00:27:45.266 DEBUG: OnContextCreated()
+- 00:27:45.750 INFO: GET 500 /get-excel/
+- 00:27:45.938 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/get-excel/
+- 00:28:42.828 DEBUG: WM_DESTROY
+- 00:28:42.844 DEBUG: RemoveBrowserWindow(): hwnd = 394462
+- 00:28:42.844 INFO: Stopping Mongoose web server
+- 00:28:42.844 DEBUG: Mongoose webserver stopped immediately
+- 00:28:42.844 DEBUG: OnBeforeClose() hwnd=394420
+- 00:28:42.844 DEBUG: RemoveBrowserWindow(): hwnd = 394420
+- 00:28:42.844 DEBUG: GetBrowserWindow(): not found, hwnd = 394420
+- 00:28:42.844 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 00:28:42.844 DEBUG: Calling CefQuitMessageLoop()
+- 00:28:42.000 INFO: Ended application
+- 00:28:42.000 INFO: --------------------------------------------------------
+- 00:28:45.000 INFO: --------------------------------------------------------
+- 00:28:45.000 INFO: Started application
+- 00:28:45.000 INFO: Logging to: C:\Users\Mothy\Documents\proyectoNestor\debug.log
+- 00:28:45.000 INFO: Log level = DEBUG4
+- 00:28:45.000 INFO: Starting Mongoose 3.9c web server
+- 00:28:45.000 INFO: WWW directory: C:\Users\Mothy\Documents\proyectoNestor\www
+- 00:28:45.000 INFO: Index files: index.html,index.php
+- 00:28:45.000 INFO: CGI interpreter: C:\Users\Mothy\Documents\proyectoNestor\php\php-cgi.exe
+- 00:28:45.000 INFO: CGI pattern: **.php$
+- 00:28:45.000 INFO: Hide files patterns: 
+- 00:28:45.000 INFO: CGI environment variables set: TMP=C:\Users\Mothy\AppData\Local\Temp\,TEMP=C:\Users\Mothy\AppData\Local\Temp\,TMPDIR=C:\Users\Mothy\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 00:28:45.016 INFO: Web server url: http://127.0.0.1:5000/
+- 00:28:45.016 INFO: remote_debugging_port = 59555
+- 00:28:45.016 DEBUG: Command line string for the browser process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --remote-debugging-port=59555
+- 00:28:46.157 DEBUG: App::OnContextInitialized()
+- 00:28:46.157 DEBUG: Window max width/height = 1286/680
+- 00:28:46.172 DEBUG: GetBrowserWindow(): not found, hwnd = 591842
+- 00:28:46.172 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 00:28:46.172 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 00:28:46.172 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 00:28:46.172 DEBUG: BrowserWindow::CreateBrowserControl()
+- 00:28:46.172 DEBUG: StoreBrowserWindow(): hwnd = 591842
+- 00:28:46.344 DEBUG: ClientHandler::OnAfterCreated()
+- 00:28:46.344 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 00:28:46.391 DEBUG: OnLoadingStateChange: loading=1, url=
+- 00:28:46.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x9874 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=24.20.13011.1009 --gpu-driver-date=8-27-2018 --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --service-request-channel-token=6215A76C1771586AC44CC797103CC36A --mojo-platform-channel-handle=1704 /prefetch:2
+- 00:28:46.016 DEBUG: Command line string for the renderer process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=renderer --no-sandbox --primordial-pipe-token=D0C9E218C7DEAAF22370F576BEE5FDA2 --lang=en-US --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=D0C9E218C7DEAAF22370F576BEE5FDA2 --renderer-client-id=3 --mojo-platform-channel-handle=2240 /prefetch:1
+[1106/002846.811:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 00:28:46.297 DEBUG: OnBrowserCreated()
+[1106/002846.967:ERROR:block_files.cc(479)] Failed to open C:\Users\Mothy\Documents\proyectoNestor\webcache\GPUCache\data_1
+[1106/002846.975:ERROR:block_files.cc(479)] Failed to open C:\Users\Mothy\Documents\proyectoNestor\webcache\Cache\data_3
+[1106/002846.975:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[1106/002846.975:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\Mothy\Documents\proyectoNestor\webcache\GPUCache to C:\Users\Mothy\Documents\proyectoNestor\webcache\old_GPUCache_001
+[1106/002846.975:ERROR:disk_cache.cc(132)] Unable to create cache
+[1106/002846.975:ERROR:shader_disk_cache.cc(593)] Shader Cache Creation failed: -2
+[1106/002846.979:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[1106/002846.979:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\Mothy\Documents\proyectoNestor\webcache\Cache to C:\Users\Mothy\Documents\proyectoNestor\webcache\old_Cache_000
+[1106/002846.979:ERROR:disk_cache.cc(132)] Unable to create cache
+- 00:28:48.719 INFO: GET 200 /web/css/animate.css
+- 00:28:48.719 INFO: GET 200 /web/css/bootstrap-datepicker.min.css
+- 00:28:48.719 INFO: GET 200 /web/js/sweetalert2.all.min.js
+- 00:28:48.719 INFO: GET 200 /web/css/bootstrap.min.css
+- 00:28:48.719 INFO: GET 200 /web/js/jquery.js
+- 00:28:48.735 INFO: GET 200 /web/js/bootstrap-notify.min.js
+- 00:28:48.750 INFO: GET 200 /web/js/bootstrap.min.js
+- 00:28:48.750 INFO: GET 200 /
+- 00:28:48.750 INFO: GET 200 /web/js/bootstrap-datepicker.js
+- 00:28:48.109 DEBUG: OnContextCreated()
+- 00:28:48.766 INFO: GET 200 /web/js/popper.min.js
+- 00:28:49.235 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/
+- 00:28:49.985 INFO: GET 200 /dashboard/?vista=inicio
+- 00:28:50.703 INFO: GET 200 /getPagina/?pagina=1
+[1106/002850.827:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 00:28:50.860 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/
+- 00:28:50.860 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 00:28:51.453 INFO: GET 200 /dashboard/?vista=reporte
+- 00:28:52.453 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 00:28:53.391 DEBUG: OnContextCreated()
+- 00:28:53.047 INFO: GET 200 /get-excel/
+- 00:28:53.157 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/get-excel/
+- 00:29:55.391 DEBUG: WM_DESTROY
+- 00:29:55.391 DEBUG: RemoveBrowserWindow(): hwnd = 591842
+- 00:29:55.391 INFO: Stopping Mongoose web server
+- 00:29:55.391 DEBUG: Mongoose webserver stopped immediately
+- 00:29:55.391 DEBUG: OnBeforeClose() hwnd=394432
+- 00:29:55.391 DEBUG: RemoveBrowserWindow(): hwnd = 394432
+- 00:29:55.391 DEBUG: GetBrowserWindow(): not found, hwnd = 394432
+- 00:29:55.391 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 00:29:55.391 DEBUG: Calling CefQuitMessageLoop()
+- 00:29:55.578 INFO: Ended application
+- 00:29:55.578 INFO: --------------------------------------------------------
+- 00:29:57.000 INFO: --------------------------------------------------------
+- 00:29:57.000 INFO: Started application
+- 00:29:57.000 INFO: Logging to: C:\Users\Mothy\Documents\proyectoNestor\debug.log
+- 00:29:57.000 INFO: Log level = DEBUG4
+- 00:29:57.000 INFO: Starting Mongoose 3.9c web server
+- 00:29:57.000 INFO: WWW directory: C:\Users\Mothy\Documents\proyectoNestor\www
+- 00:29:57.000 INFO: Index files: index.html,index.php
+- 00:29:57.000 INFO: CGI interpreter: C:\Users\Mothy\Documents\proyectoNestor\php\php-cgi.exe
+- 00:29:57.000 INFO: CGI pattern: **.php$
+- 00:29:57.000 INFO: Hide files patterns: 
+- 00:29:57.000 INFO: CGI environment variables set: TMP=C:\Users\Mothy\AppData\Local\Temp\,TEMP=C:\Users\Mothy\AppData\Local\Temp\,TMPDIR=C:\Users\Mothy\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 00:29:57.016 INFO: Web server url: http://127.0.0.1:5000/
+- 00:29:57.016 INFO: remote_debugging_port = 61380
+- 00:29:57.016 DEBUG: Command line string for the browser process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --remote-debugging-port=61380
+- 00:29:57.172 DEBUG: App::OnContextInitialized()
+- 00:29:57.172 DEBUG: Window max width/height = 1286/680
+- 00:29:57.172 DEBUG: GetBrowserWindow(): not found, hwnd = 984802
+- 00:29:57.172 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 00:29:57.172 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 00:29:57.188 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 00:29:57.188 DEBUG: BrowserWindow::CreateBrowserControl()
+- 00:29:57.188 DEBUG: StoreBrowserWindow(): hwnd = 984802
+- 00:29:57.375 DEBUG: ClientHandler::OnAfterCreated()
+- 00:29:57.375 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 00:29:57.422 DEBUG: OnLoadingStateChange: loading=1, url=
+- 00:29:57.031 DEBUG: Command line string for the gpu-process process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x9874 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=24.20.13011.1009 --gpu-driver-date=8-27-2018 --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --service-request-channel-token=2AF10A122BC7BB8D2A2BBB92B4789E61 --mojo-platform-channel-handle=1680 /prefetch:2
+- 00:29:57.000 DEBUG: Command line string for the renderer process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=renderer --no-sandbox --primordial-pipe-token=E78D1C1E74EB690A998E598544BF0347 --lang=en-US --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=E78D1C1E74EB690A998E598544BF0347 --renderer-client-id=3 --mojo-platform-channel-handle=2232 /prefetch:1
+[1106/002958.084:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 00:29:58.172 DEBUG: OnBrowserCreated()
+[1106/002958.217:ERROR:block_files.cc(479)] Failed to open C:\Users\Mothy\Documents\proyectoNestor\webcache\Cache\data_3
+[1106/002958.225:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[1106/002958.225:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\Mothy\Documents\proyectoNestor\webcache\Cache to C:\Users\Mothy\Documents\proyectoNestor\webcache\old_Cache_000
+[1106/002958.225:ERROR:disk_cache.cc(132)] Unable to create cache
+- 00:29:59.547 INFO: GET 200 /
+- 00:29:59.547 INFO: GET 200 /web/css/animate.css
+- 00:29:59.547 INFO: GET 200 /web/css/bootstrap-datepicker.min.css
+- 00:29:59.547 INFO: GET 200 /web/js/sweetalert2.all.min.js
+- 00:29:59.547 INFO: GET 200 /web/js/jquery.js
+- 00:29:59.547 INFO: GET 200 /web/css/bootstrap.min.css
+- 00:29:59.563 INFO: GET 200 /web/js/bootstrap-notify.min.js
+- 00:29:59.578 INFO: GET 200 /web/js/bootstrap.min.js
+- 00:29:59.578 INFO: GET 200 /web/js/bootstrap-datepicker.js
+- 00:29:59.578 INFO: GET 200 /web/js/popper.min.js
+- 00:29:59.968 DEBUG: OnContextCreated()
+- 00:30:00.203 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/
+- 00:30:01.985 INFO: GET 200 /dashboard/?vista=inicio
+- 00:30:02.703 INFO: GET 200 /getPagina/?pagina=1
+[1106/003002.841:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 00:30:02.485 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/
+- 00:30:02.500 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 00:30:03.032 INFO: GET 200 /dashboard/?vista=reporte
+- 00:30:04.016 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 00:30:04.984 DEBUG: OnContextCreated()
+- 00:30:04.610 INFO: GET 500 /get-excel/
+- 00:30:05.766 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/get-excel/
+- 00:30:18.860 DEBUG: WM_DESTROY
+- 00:30:18.860 DEBUG: RemoveBrowserWindow(): hwnd = 984802
+- 00:30:18.860 INFO: Stopping Mongoose web server
+- 00:30:18.860 DEBUG: Mongoose webserver stopped immediately
+- 00:30:18.860 DEBUG: OnBeforeClose() hwnd=788624
+- 00:30:18.860 DEBUG: RemoveBrowserWindow(): hwnd = 788624
+- 00:30:18.860 DEBUG: GetBrowserWindow(): not found, hwnd = 788624
+- 00:30:18.860 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 00:30:18.860 DEBUG: Calling CefQuitMessageLoop()
+- 00:30:18.125 INFO: Ended application
+- 00:30:18.125 INFO: --------------------------------------------------------
+- 00:30:20.000 INFO: --------------------------------------------------------
+- 00:30:20.000 INFO: Started application
+- 00:30:20.000 INFO: Logging to: C:\Users\Mothy\Documents\proyectoNestor\debug.log
+- 00:30:20.000 INFO: Log level = DEBUG4
+- 00:30:20.000 INFO: Starting Mongoose 3.9c web server
+- 00:30:20.000 INFO: WWW directory: C:\Users\Mothy\Documents\proyectoNestor\www
+- 00:30:20.000 INFO: Index files: index.html,index.php
+- 00:30:20.000 INFO: CGI interpreter: C:\Users\Mothy\Documents\proyectoNestor\php\php-cgi.exe
+- 00:30:20.000 INFO: CGI pattern: **.php$
+- 00:30:20.000 INFO: Hide files patterns: 
+- 00:30:20.000 INFO: CGI environment variables set: TMP=C:\Users\Mothy\AppData\Local\Temp\,TEMP=C:\Users\Mothy\AppData\Local\Temp\,TMPDIR=C:\Users\Mothy\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 00:30:20.031 INFO: Web server url: http://127.0.0.1:5000/
+- 00:30:20.031 INFO: remote_debugging_port = 51504
+- 00:30:20.031 DEBUG: Command line string for the browser process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --remote-debugging-port=51504
+- 00:30:20.172 DEBUG: App::OnContextInitialized()
+- 00:30:20.172 DEBUG: Window max width/height = 1286/680
+- 00:30:20.187 DEBUG: GetBrowserWindow(): not found, hwnd = 656608
+- 00:30:20.187 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 00:30:20.187 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 00:30:20.187 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 00:30:20.187 DEBUG: BrowserWindow::CreateBrowserControl()
+- 00:30:20.187 DEBUG: StoreBrowserWindow(): hwnd = 656608
+- 00:30:20.344 DEBUG: ClientHandler::OnAfterCreated()
+- 00:30:20.344 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 00:30:20.406 DEBUG: OnLoadingStateChange: loading=1, url=
+- 00:30:20.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x9874 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=24.20.13011.1009 --gpu-driver-date=8-27-2018 --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --service-request-channel-token=C29107CBAFE75A8A5493BC92A07FA5AB --mojo-platform-channel-handle=1684 /prefetch:2
+- 00:30:20.000 DEBUG: Command line string for the renderer process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=renderer --no-sandbox --primordial-pipe-token=FD3C46DECE5AFDA838BEB7FBEDC9726D --lang=en-US --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=FD3C46DECE5AFDA838BEB7FBEDC9726D --renderer-client-id=3 --mojo-platform-channel-handle=2248 /prefetch:1
+[1106/003021.140:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 00:30:21.375 DEBUG: OnBrowserCreated()
+[1106/003021.365:ERROR:block_files.cc(479)] Failed to open C:\Users\Mothy\Documents\proyectoNestor\webcache\Cache\data_3
+[1106/003021.406:ERROR:block_files.cc(479)] Failed to open C:\Users\Mothy\Documents\proyectoNestor\webcache\GPUCache\data_3
+[1106/003021.410:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[1106/003021.410:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\Mothy\Documents\proyectoNestor\webcache\Cache to C:\Users\Mothy\Documents\proyectoNestor\webcache\old_Cache_000
+[1106/003021.410:ERROR:disk_cache.cc(132)] Unable to create cache
+[1106/003021.414:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[1106/003021.414:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\Mothy\Documents\proyectoNestor\webcache\GPUCache to C:\Users\Mothy\Documents\proyectoNestor\webcache\old_GPUCache_001
+[1106/003021.414:ERROR:disk_cache.cc(132)] Unable to create cache
+[1106/003021.414:ERROR:shader_disk_cache.cc(593)] Shader Cache Creation failed: -2
+- 00:30:23.641 INFO: GET 200 /web/css/animate.css
+- 00:30:23.641 INFO: GET 200 /web/css/bootstrap-datepicker.min.css
+- 00:30:23.641 INFO: GET 200 /web/js/sweetalert2.all.min.js
+- 00:30:23.641 INFO: GET 200 /web/js/jquery.js
+- 00:30:23.641 INFO: GET 200 /web/css/bootstrap.min.css
+- 00:30:23.094 DEBUG: OnContextCreated()
+- 00:30:23.656 INFO: GET 200 /web/js/bootstrap-notify.min.js
+- 00:30:23.656 INFO: GET 200 /
+- 00:30:23.672 INFO: GET 200 /web/js/bootstrap.min.js
+- 00:30:23.672 INFO: GET 200 /web/js/popper.min.js
+- 00:30:23.672 INFO: GET 200 /web/js/bootstrap-datepicker.js
+- 00:30:23.078 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/
+- 00:30:24.672 INFO: GET 200 /dashboard/?vista=inicio
+- 00:30:24.328 INFO: GET 200 /getPagina/?pagina=1
+[1106/003026.646:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 00:30:26.281 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/
+- 00:30:26.281 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 00:30:27.844 INFO: GET 200 /dashboard/?vista=reporte
+- 00:30:28.984 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 00:30:29.672 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 00:30:29.672 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 00:30:29.672 INFO: About to download a file: file.xlsx
+- 00:30:29.703 INFO: GET 200 /get-excel/
+- 00:30:33.000 INFO: Download completed, saved to: C:\Users\Mothy\Desktop\file.xlsx
+- 00:32:19.469 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 00:32:20.266 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 00:32:20.266 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 00:32:20.266 INFO: About to download a file: file.xlsx
+- 00:32:20.297 INFO: GET 200 /get-excel/
+- 00:32:25.875 DEBUG: GetBrowserWindow(): not found, hwnd = 264348
+- 00:32:25.984 DEBUG: GetBrowserWindow(): not found, hwnd = 264348
+- 00:32:25.094 DEBUG: GetBrowserWindow(): not found, hwnd = 264348
+- 00:32:25.203 DEBUG: GetBrowserWindow(): not found, hwnd = 264348
+- 00:32:25.312 DEBUG: GetBrowserWindow(): not found, hwnd = 264348
+- 00:32:25.422 DEBUG: GetBrowserWindow(): not found, hwnd = 264348
+- 00:32:25.531 DEBUG: GetBrowserWindow(): not found, hwnd = 264348
+- 00:32:26.641 DEBUG: GetBrowserWindow(): not found, hwnd = 264348
+- 00:32:26.750 DEBUG: GetBrowserWindow(): not found, hwnd = 264348
+- 00:32:26.859 DEBUG: GetBrowserWindow(): not found, hwnd = 264348
+- 00:32:26.969 DEBUG: GetBrowserWindow(): not found, hwnd = 264348
+- 00:32:26.078 DEBUG: GetBrowserWindow(): not found, hwnd = 264348
+- 00:32:26.187 DEBUG: GetBrowserWindow(): not found, hwnd = 264348
+- 00:32:27.203 INFO: Download completed, saved to: C:\Users\Mothy\Desktop\file.xlsx
+- 00:36:15.062 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 00:36:16.750 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 00:36:16.750 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 00:36:16.750 INFO: About to download a file: file.xlsx
+- 00:36:16.766 INFO: GET 200 /get-excel/
+- 00:36:17.391 DEBUG: GetBrowserWindow(): not found, hwnd = 264736
+- 00:36:17.406 DEBUG: GetBrowserWindow(): not found, hwnd = 264736
+- 00:36:17.516 DEBUG: GetBrowserWindow(): not found, hwnd = 264736
+- 00:36:17.625 DEBUG: GetBrowserWindow(): not found, hwnd = 264736
+- 00:36:18.734 DEBUG: GetBrowserWindow(): not found, hwnd = 264736
+- 00:36:18.844 DEBUG: GetBrowserWindow(): not found, hwnd = 264736
+- 00:36:18.953 DEBUG: GetBrowserWindow(): not found, hwnd = 264736
+- 00:36:18.062 DEBUG: GetBrowserWindow(): not found, hwnd = 264736
+- 00:36:18.172 DEBUG: GetBrowserWindow(): not found, hwnd = 264736
+- 00:36:18.281 DEBUG: GetBrowserWindow(): not found, hwnd = 264736
+- 00:36:19.219 INFO: Download completed, saved to: C:\Users\Mothy\Desktop\file.xlsx
+- 00:38:53.656 DEBUG: WM_DESTROY
+- 00:38:53.656 DEBUG: RemoveBrowserWindow(): hwnd = 656608
+- 00:38:53.656 INFO: Stopping Mongoose web server
+- 00:38:53.656 DEBUG: Mongoose webserver stopped immediately
+- 00:38:53.656 DEBUG: OnBeforeClose() hwnd=1181712
+- 00:38:53.656 DEBUG: RemoveBrowserWindow(): hwnd = 1181712
+- 00:38:53.656 DEBUG: GetBrowserWindow(): not found, hwnd = 1181712
+- 00:38:53.656 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 00:38:53.656 DEBUG: Calling CefQuitMessageLoop()
+- 00:38:53.953 INFO: Ended application
+- 00:38:53.953 INFO: --------------------------------------------------------
+- 00:39:01.000 INFO: --------------------------------------------------------
+- 00:39:01.000 INFO: Started application
+- 00:39:01.000 INFO: Logging to: C:\Users\Mothy\Documents\proyectoNestor\debug.log
+- 00:39:01.000 INFO: Log level = DEBUG4
+- 00:39:01.016 INFO: Starting Mongoose 3.9c web server
+- 00:39:01.016 INFO: WWW directory: C:\Users\Mothy\Documents\proyectoNestor\www
+- 00:39:01.016 INFO: Index files: index.html,index.php
+- 00:39:01.016 INFO: CGI interpreter: C:\Users\Mothy\Documents\proyectoNestor\php\php-cgi.exe
+- 00:39:01.016 INFO: CGI pattern: **.php$
+- 00:39:01.016 INFO: Hide files patterns: 
+- 00:39:01.016 INFO: CGI environment variables set: TMP=C:\Users\Mothy\AppData\Local\Temp\,TEMP=C:\Users\Mothy\AppData\Local\Temp\,TMPDIR=C:\Users\Mothy\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 00:39:01.032 INFO: Web server url: http://127.0.0.1:5000/
+- 00:39:01.032 INFO: remote_debugging_port = 64209
+- 00:39:01.032 DEBUG: Command line string for the browser process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --remote-debugging-port=64209
+- 00:39:01.188 DEBUG: App::OnContextInitialized()
+- 00:39:01.188 DEBUG: Window max width/height = 1286/680
+- 00:39:01.188 DEBUG: GetBrowserWindow(): not found, hwnd = 592028
+- 00:39:01.188 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 00:39:01.188 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 00:39:01.188 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 00:39:01.188 DEBUG: BrowserWindow::CreateBrowserControl()
+- 00:39:01.188 DEBUG: StoreBrowserWindow(): hwnd = 592028
+- 00:39:01.313 DEBUG: ClientHandler::OnAfterCreated()
+- 00:39:01.313 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 00:39:01.344 DEBUG: OnLoadingStateChange: loading=1, url=
+- 00:39:01.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x9874 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=24.20.13011.1009 --gpu-driver-date=8-27-2018 --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --service-request-channel-token=6596EF69291EC693173A3F374FF89C61 --mojo-platform-channel-handle=1688 /prefetch:2
+- 00:39:02.000 DEBUG: Command line string for the renderer process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=renderer --no-sandbox --primordial-pipe-token=AC7D21ABB6378E98C0FA73E8C6383B23 --lang=en-US --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=AC7D21ABB6378E98C0FA73E8C6383B23 --renderer-client-id=3 --mojo-platform-channel-handle=2248 /prefetch:1
+[1106/003902.206:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 00:39:04.375 DEBUG: OnBrowserCreated()
+- 00:39:06.657 INFO: GET 200 /
+- 00:39:06.094 DEBUG: OnContextCreated()
+- 00:39:06.078 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/
+- 00:39:07.657 INFO: GET 200 /dashboard/?vista=inicio
+- 00:39:07.297 INFO: GET 200 /getPagina/?pagina=1
+[1106/003910.170:INFO:CONSOLE(45)] "[object Object]", source: http://127.0.0.1:5000/ (45)
+- 00:39:10.703 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/
+- 00:39:10.703 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 00:39:10.250 INFO: GET 200 /dashboard/?vista=reporte
+- 00:39:11.922 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 00:39:12.610 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 00:39:12.610 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 00:39:12.610 INFO: About to download a file: file.xlsx
+- 00:39:12.657 INFO: GET 200 /get-excel/
+- 00:39:14.641 DEBUG: GetBrowserWindow(): not found, hwnd = 264674
+- 00:39:14.688 DEBUG: GetBrowserWindow(): not found, hwnd = 264674
+- 00:39:14.797 DEBUG: GetBrowserWindow(): not found, hwnd = 264674
+- 00:39:14.907 DEBUG: GetBrowserWindow(): not found, hwnd = 264674
+- 00:39:14.016 DEBUG: GetBrowserWindow(): not found, hwnd = 264674
+- 00:39:14.125 DEBUG: GetBrowserWindow(): not found, hwnd = 264674
+- 00:39:14.235 DEBUG: GetBrowserWindow(): not found, hwnd = 264674
+- 00:39:14.344 DEBUG: GetBrowserWindow(): not found, hwnd = 264674
+- 00:39:14.453 DEBUG: GetBrowserWindow(): not found, hwnd = 264674
+- 00:39:15.563 DEBUG: GetBrowserWindow(): not found, hwnd = 264674
+- 00:39:16.594 INFO: Download completed, saved to: C:\Users\Mothy\Desktop\file.xlsx
+- 00:40:17.641 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 00:40:17.297 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 00:40:17.297 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 00:40:17.297 INFO: About to download a file: file.xlsx
+- 00:40:17.328 INFO: GET 200 /get-excel/
+- 00:40:20.516 DEBUG: GetBrowserWindow(): not found, hwnd = 461168
+- 00:40:21.625 DEBUG: GetBrowserWindow(): not found, hwnd = 461168
+- 00:40:21.735 DEBUG: GetBrowserWindow(): not found, hwnd = 461168
+- 00:40:21.844 DEBUG: GetBrowserWindow(): not found, hwnd = 461168
+- 00:40:21.953 DEBUG: GetBrowserWindow(): not found, hwnd = 461168
+- 00:40:21.063 DEBUG: GetBrowserWindow(): not found, hwnd = 461168
+- 00:40:21.172 DEBUG: GetBrowserWindow(): not found, hwnd = 461168
+- 00:40:21.282 DEBUG: GetBrowserWindow(): not found, hwnd = 461168
+- 00:40:21.391 DEBUG: GetBrowserWindow(): not found, hwnd = 461168
+- 00:40:21.500 DEBUG: GetBrowserWindow(): not found, hwnd = 461168
+- 00:40:22.375 INFO: Download completed, saved to: C:\Users\Mothy\Desktop\file.xlsx
+- 00:41:13.078 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 00:41:14.844 INFO: About to download a file: file.xlsx
+- 00:41:14.860 INFO: GET 200 /get-excel/
+- 00:41:16.547 DEBUG: GetBrowserWindow(): not found, hwnd = 68174
+- 00:41:16.641 DEBUG: GetBrowserWindow(): not found, hwnd = 68174
+- 00:41:16.750 DEBUG: GetBrowserWindow(): not found, hwnd = 68174
+- 00:41:16.860 DEBUG: GetBrowserWindow(): not found, hwnd = 68174
+- 00:41:16.969 DEBUG: GetBrowserWindow(): not found, hwnd = 68174
+- 00:41:16.078 DEBUG: GetBrowserWindow(): not found, hwnd = 68174
+- 00:41:16.188 DEBUG: GetBrowserWindow(): not found, hwnd = 68174
+- 00:41:16.485 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 00:41:16.485 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 00:41:17.875 INFO: Download completed, saved to: C:\Users\Mothy\Desktop\file.xlsx
+- 00:52:40.438 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 00:52:41.188 INFO: About to download a file: file.xlsx
+- 00:52:41.188 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 00:52:41.188 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 00:52:41.219 INFO: GET 200 /get-excel/
+- 00:52:43.469 DEBUG: GetBrowserWindow(): not found, hwnd = 854570
+- 00:52:43.500 DEBUG: GetBrowserWindow(): not found, hwnd = 854570
+- 00:52:44.610 DEBUG: GetBrowserWindow(): not found, hwnd = 854570
+- 00:52:44.719 DEBUG: GetBrowserWindow(): not found, hwnd = 854570
+- 00:52:44.828 DEBUG: GetBrowserWindow(): not found, hwnd = 854570
+- 00:52:44.938 DEBUG: GetBrowserWindow(): not found, hwnd = 854570
+- 00:52:44.047 DEBUG: GetBrowserWindow(): not found, hwnd = 854570
+- 00:52:44.157 DEBUG: GetBrowserWindow(): not found, hwnd = 854570
+- 00:52:44.266 DEBUG: GetBrowserWindow(): not found, hwnd = 854570
+- 00:52:45.188 INFO: Download completed, saved to: C:\Users\Mothy\Desktop\file.xlsx
+- 00:55:06.141 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 00:55:07.907 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 00:55:07.907 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 00:55:07.907 INFO: About to download a file: file.xlsx
+- 00:55:07.938 INFO: GET 200 /get-excel/
+- 00:55:08.516 DEBUG: GetBrowserWindow(): not found, hwnd = 526584
+- 00:55:09.532 DEBUG: GetBrowserWindow(): not found, hwnd = 526584
+- 00:55:09.641 DEBUG: GetBrowserWindow(): not found, hwnd = 526584
+- 00:55:09.750 DEBUG: GetBrowserWindow(): not found, hwnd = 526584
+- 00:55:09.860 DEBUG: GetBrowserWindow(): not found, hwnd = 526584
+- 00:55:09.969 DEBUG: GetBrowserWindow(): not found, hwnd = 526584
+- 00:55:09.078 DEBUG: GetBrowserWindow(): not found, hwnd = 526584
+- 00:55:09.188 DEBUG: GetBrowserWindow(): not found, hwnd = 526584
+- 00:55:09.297 DEBUG: GetBrowserWindow(): not found, hwnd = 526584
+- 00:55:09.407 DEBUG: GetBrowserWindow(): not found, hwnd = 526584
+- 00:55:09.516 DEBUG: GetBrowserWindow(): not found, hwnd = 526584
+- 00:55:10.407 INFO: Download completed, saved to: C:\Users\Mothy\Desktop\file.xlsx
+- 01:00:51.532 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:5000/#
+- 01:00:51.235 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:5000/get-excel/
+- 01:00:51.235 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/#
+- 01:00:51.235 INFO: About to download a file: file.xlsx
+- 01:00:51.282 INFO: GET 200 /get-excel/
+- 01:00:54.922 DEBUG: GetBrowserWindow(): not found, hwnd = 985418
+- 01:00:54.985 DEBUG: GetBrowserWindow(): not found, hwnd = 985418
+- 01:00:54.094 DEBUG: GetBrowserWindow(): not found, hwnd = 985418
+- 01:00:54.203 DEBUG: GetBrowserWindow(): not found, hwnd = 985418
+- 01:00:54.313 DEBUG: GetBrowserWindow(): not found, hwnd = 985418
+- 01:00:54.422 DEBUG: GetBrowserWindow(): not found, hwnd = 985418
+- 01:00:55.532 DEBUG: GetBrowserWindow(): not found, hwnd = 985418
+- 01:00:55.641 DEBUG: GetBrowserWindow(): not found, hwnd = 985418
+- 01:00:55.750 DEBUG: GetBrowserWindow(): not found, hwnd = 985418
+- 01:00:55.860 DEBUG: GetBrowserWindow(): not found, hwnd = 985418
+- 01:00:55.969 DEBUG: GetBrowserWindow(): not found, hwnd = 985418
+- 01:00:55.078 DEBUG: GetBrowserWindow(): not found, hwnd = 985418
+- 01:00:56.063 INFO: Download completed, saved to: C:\Users\Mothy\Desktop\file.xlsx
+- 01:01:40.391 DEBUG: WM_DESTROY
+- 01:01:40.391 DEBUG: RemoveBrowserWindow(): hwnd = 592028
+- 01:01:40.391 INFO: Stopping Mongoose web server
+- 01:01:40.391 DEBUG: Mongoose webserver stopped immediately
+- 01:01:40.391 DEBUG: OnBeforeClose() hwnd=330224
+- 01:01:40.391 DEBUG: RemoveBrowserWindow(): hwnd = 330224
+- 01:01:40.391 DEBUG: GetBrowserWindow(): not found, hwnd = 330224
+- 01:01:40.391 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 01:01:40.391 DEBUG: Calling CefQuitMessageLoop()
+- 01:01:40.485 INFO: Ended application
+- 01:01:40.485 INFO: --------------------------------------------------------
