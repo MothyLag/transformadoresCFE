@@ -29,7 +29,7 @@ $app->get('/search/',function () use($app){
   $datos['all'] = null;
   if($rubro == "tiempo" || $rubro == "mes"){
       $tiempo = "'%/".$_GET['texto']."'";
-      $st = $app->db->prepare("SELECT r.id,r.fecha,r.ubicacion,r.responsable,r.num_circuito,r.causa,i.id idi,i.fecha fechai,i.ubicacion ubicacioni,i.responsable responsablei,i.num_circuito num_circuitoi ,i.causa causai FROM retirado AS r JOIN instalado AS i ON(r.id_instalado = i.id) WHERE fechai LIKE $tiempo");
+      $st = $app->db->prepare("SELECT r.id,r.fecha,r.ubicacion,r.responsable,r.num_circuito,r.causa,i.id idi,i.fecha fechai,i.ubicacion ubicacioni,i.responsable responsablei,i.num_circuito num_circuitoi ,i.causa causai FROM retirado AS r JOIN instalado AS i ON(r.id_instalado = i.id) WHERE fechai LIKE $tiempo ORDER BY(fechai)");
       $st->execute();
       $datos['all'] = $st->fetchAll();
   }else{
@@ -50,6 +50,13 @@ $app->get('/opciones/',function () use($app){
     $st->setFetchMode(PDO::FETCH_NUM);
     $st->execute();
     $data = $st->fetchAll();
+    $st = $app->db->prepare("SELECT $rubro FROM instalado");
+    $st->setFetchMode(PDO::FETCH_NUM);
+    $st->execute();
+    $data2 = $st->fetchAll();
+    foreach ($data2 as $value) {
+      array_push($data,$value);
+    }
     $datos = array();
     for ($i=0; $i < count($data); $i++) {
       $datos[] = [$data[$i],$data[$i]];

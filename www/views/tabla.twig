@@ -83,6 +83,9 @@
       var tabla = $(this).data('tabla');
       $.get("{{urlFor('getedit')}}",{id:id,tabla:tabla},function(data){
         $('.modal-content').html(data);
+        $('.guardar').click(function(){
+          $('.modal').modal('hide');
+        });
       });
       $('.modal').modal('show');
     });

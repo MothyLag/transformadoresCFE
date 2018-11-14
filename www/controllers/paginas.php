@@ -62,8 +62,18 @@ $app->post("/update-retirado/",function () use($app){
   foreach ($_POST as $value) {
     $data[] = $value;
   }
-  $st = $app->db->prepare("UPDATE retirado SET fecha = ?,ubicacion = ?,responsable = ?,num_circuito = ?,causa = ?,coordenadas = ?,marca = ?,capacidad = ?,fases = ?,voltmed = ?,voltbaj = ?,no_serie = ?,no_econo = ?,aceite = ?,peso = ?,causadan = ?,clavedan = ?,condiciones = ? WHERE id=?");
+  $st = $app->db->prepare("UPDATE retirado SET fecha = ?,ubicacion = ?,responsable = ?,num_circuito = ?,causa = ?,coordenadas = ?,marca = ?,capacidad = ?,fases = ?,voltmed = ?,voltbaj = ?,no_serie = ?,no_econo = ?,tipo2 = ?,aceite = ?,peso = ?,causadan = ?,clavedan = ?,condiciones = ? WHERE id=?");
   $st->execute($data);
+  $st = $app->db->prepare("SELECT fecha,ubicacion,responsable,num_circuito,causa,coordenadas FROM retirado WHERE id=?");
+  $st->setFetchMode(PDO::FETCH_OBJ);
+  $st->execute(array($_POST['id']));
+  $daticos = $st->fetch();
+  $data2 = [];
+  foreach ($daticos as $value) {
+    $data2[] = $value;
+  }
+  $st = $app->db->prepare("UPDATE instalado SET fecha = ?,ubicacion = ?,responsable = ?,num_circuito = ?,causa = ?,coordenadas = ? WHERE id=".$_POST['id']."");
+  $st->execute($data2);
 })->name('update-retirado');
 
 $app->post("/update-instalado/",function () use($app){
@@ -71,8 +81,18 @@ $app->post("/update-instalado/",function () use($app){
   foreach ($_POST as $value) {
     $data[] = $value;
   }
-  $st = $app->db->prepare("UPDATE instalado SET fecha = ?,ubicacion = ?,responsable = ?,num_circuito = ?,causa = ?,coordenadas = ?,marca = ?,capacidad = ?,fases = ?,voltmed = ?,voltbaj = ?,no_serie = ?,no_econo = ?,aceite = ?,peso = ?,condiciones = ? WHERE id=?");
+  $st = $app->db->prepare("UPDATE instalado SET fecha = ?,ubicacion = ?,responsable = ?,num_circuito = ?,causa = ?,coordenadas = ?,marca = ?,capacidad = ?,fases = ?,voltmed = ?,voltbaj = ?,no_serie = ?,no_econo = ?,tipo2 = ?,aceite = ?,peso = ?,condiciones = ? WHERE id=?");
   $st->execute($data);
+  $st = $app->db->prepare("SELECT fecha,ubicacion,responsable,num_circuito,causa,coordenadas FROM instalado WHERE id=?");
+  $st->setFetchMode(PDO::FETCH_OBJ);
+  $st->execute(array($_POST['id']));
+  $daticos = $st->fetch();
+  $data2 = [];
+  foreach ($daticos as $value) {
+    $data2[] = $value;
+  }
+  $st = $app->db->prepare("UPDATE retirado SET fecha = ?,ubicacion = ?,responsable = ?,num_circuito = ?,causa = ?,coordenadas = ? WHERE id=".$_POST['id']."");
+  $st->execute($data2);
 })->name('update-instalado');
 
 $app->post("/eliminar/",function () use($app){

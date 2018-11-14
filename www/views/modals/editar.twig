@@ -20,11 +20,77 @@
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Número de circuito</label>
-      <input type="text" value="{{all.num_circuito}}" class="form-control" name="num_circuito">
+      <select class="form-control" id="circuito" name="num_circuito">
+          <option selected>{{all.num_circuito}}</option>
+          <option>AXA 4112 AXTLA-MATLAPA</option>
+          <option>AXA 5110 RIO</option>
+          <option>AXA 5120 COMOCA</option>
+          <option>CCO 5282 CACALILAO</option>
+          <option>COC 5120 TAMUIN</option>
+          <option>COC 5110 LAS PALMAS</option>
+          <option>EBA 4110 ESTACION</option>
+          <option>EBA 4120 EBANO</option>
+          <option>HGD 5030 EL HIGO</option>
+          <option>HST 5120 TANLAJAS</option>
+          <option>HST 5130 TAMPAMOLON</option>
+          <option>HUH 5210 JUGUERA</option>
+          <option>HUH 5220 LA VUELTA</option>
+          <option>HUH 5230 PIMIENTA</option>
+          <option>MSO 4110 ALAMEDA</option>
+          <option>MSO 4140 EL GAVILAN</option>
+          <option>MSO 4130 TAMPAYA</option>
+          <option>MSO 4120 JUAREZ</option>
+          <option>MUL 5320 GONZALEZ</option>
+          <option>RSI 5110 SAN JOSE DEL LIMON</option>
+          <option>RSI 5120 PLAN DE IGUALA</option>
+          <option>RSI 5130 TARASCO</option>
+          <option>STS 4322 AQUISMON</option>
+          <option>STS 4312 SANTOS</option>
+          <option>TBC 5110 CABEZAS</option>
+          <option>TEM 4860 COROZAL</option>
+          <option>TMN 5412 LA CEIBA PONCIANO</option>
+          <option>TMN 5422 HUALUL</option>
+          <option>TMN 4552 TAMUIN</option>
+          <option>TMN 4542 PUEBLO NUEVO</option>
+          <option>TPK 4012 TAMPACAN</option>
+          <option>TPK 4022 MIRAFLORES</option>
+          <option>TPL 4622 TAMPAMOLON</option>
+          <option>TPL 4612 TANQUIAN CENTRO</option>
+          <option>TZE 4810 SAN MARTIN</option>
+          <option>TZE 4820 TAMAZUNCHALE</option>
+          <option>TZE 5010 SAN FELIPE</option>
+          <option>TZE 5020 JACALA</option>
+          <option>TZE 5030 TAMPACAN</option>
+          <option>TZE 5390 XILITLA</option>
+          <option>VAL 4020 COLONIAS</option>
+          <option>VAL 4030 INFONAVIT</option>
+          <option>VAL 4010 BOULEVARD</option>
+          <option>VAL 4040 CEPRESO</option>
+          <option>VES 5330 SANTOS</option>
+          <option>VES 5340 MICOS</option>
+          <option>VES 5320 PEDRERAS</option>
+          <option>VES 4050 REAL CAMPESTRE</option>
+          <option>VES 4010 IMMS</option>
+          <option>VES 4020 CLINICA METROPOLITANA</option>
+          <option>VES 4030 CENTRO</option>
+          <option>VES 4040 LOMAS</option>
+          <option>VTA 4322 SAN VICENTE</option>
+          <option>VTA 4312 TANQUIAN</option>
+          <option>XIL 4012 XILITLA</option>
+          <option>XIL 4412 XILITLA-CHICHIMIXTITLA</option>
+          <option>XIL 4422 AXTLA-MATLAPA</option>
+          <option>XIL 4432 HUICHIHUAYAN</option>
+          <option>XTD 4012 CONVENTO</option>
+      </select>
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Causa del movimiento</label>
-      <input type="text" value="{{all.causa}}" class="form-control" name="causa">
+      <select class="form-control" id="causa" name="causa">
+        <option selected >{{all.causa}}</option>
+        <option>Transformador dañado</option>
+        <option>Movimiento en red</option>
+        <option>Creación de área nueva</option>
+      </select>
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Coordenadas</label>
@@ -36,15 +102,40 @@
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Capacidad</label>
-      <input type="text" value="{{all.capacidad}}" class="form-control" name="capacidad">
+      <select class="form-control" id="capacidad" name="capacidad">
+        <option selected>{{all.capacidad}}</option>
+        <option>5 KVA</option>
+        <option>10 KVA</option>
+        <option>15 KVA</option>
+        <option>25 KVA</option>
+        <option>30 KVA</option>
+        <option>37.5 KVA</option>
+        <option>45 KVA</option>
+        <option>50 KVA</option>
+        <option>75 KVA</option>
+        <option>112 KVA</option>
+        <option>225 KVA</option>
+        <option>500 KVA</option>
+      </select>
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Fases</label>
-      <input type="text" value="{{all.fases}}" class="form-control" name="fases">
+      <select class="form-control" id="boquillas" name="boquillas">
+        <option selected>{{all.fases}}</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
     </div>
     <div class="form-group">
-      <label for="exampleInputEmail1">Voltaje medio</label>
-      <input type="text" value="{{all.voltmed}}" class="form-control" name="voltmed">
+      <label for="exampleInputEmail1">Voltaje de media tensión</label>
+      <select class="form-control" id="voltajemed" name="voltmed">
+        <option selected>{{all.voltmed}}</option>
+        <option>33000</option>
+        <option>33000YT</option>
+        <option>13200</option>
+        <option>13200YT</option>
+      </select>
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Voltaje bajo</label>
@@ -57,6 +148,14 @@
     <div class="form-group">
       <label for="exampleInputEmail1">Número económico</label>
       <input type="text" value="{{all.no_econo}}" class="form-control" name="no_econo">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Tipo</label>
+      <select class="form-control" id="tipo2" name="tipo2">
+        <option selected>{{all.tipo2}}</option>
+        <option>CONVENCIONAL</option>
+        <option>AUTOPROTEGIDO</option>
+      </select
     </div>
     <div class="form-group">
       <label for="exampleInputEmail1">Litros de aceite</label>
@@ -80,7 +179,12 @@
     {% endif %}
     <div class="form-group">
       <label for="exampleInputEmail1">Estado</label>
-      <input type="text" value="{{all.condiciones}}" class="form-control" name="condiciones">
+      <select class="form-control" id="disposicion" name="disposicion">
+        <option selected>{{all.condiciones}}</option>
+        <option>CHATARRA</option>
+        <option>REHA</option>
+        <option>ALMACEN</option>
+      </select>
     </div>
     <input type="hidden" name="id" value="{{all.id}}">
   </form>
