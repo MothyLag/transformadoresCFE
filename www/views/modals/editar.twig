@@ -166,7 +166,15 @@
       <input type="text" value="{{all.peso}}" class="form-control" name="peso">
     </div>
     {% if all.causadan is empty %}
-
+    <div class="form-group">
+      <label for="exampleInputEmail1">Estado</label>
+      <select class="form-control" id="disposicion" name="disposicion">
+        <option selected>{{all.condiciones}}</option>
+        <option>NUEVO</option>
+        <option>REPARADO</option>
+        <option>USADO</option>
+      </select>
+    </div>
     {% else %}
       <div class="form-group">
         <label for="exampleInputEmail1">Causa del daño</label>
@@ -176,16 +184,16 @@
         <label for="exampleInputEmail1">Clave del daño</label>
         <input type="text" value="{{all.clavedan}}" class="form-control" name="clavedan">
       </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Estado</label>
+        <select class="form-control" id="disposicion" name="disposicion">
+          <option selected>{{all.condiciones}}</option>
+          <option>CHATARRA</option>
+          <option>REHA</option>
+          <option>ALMACEN</option>
+        </select>
+      </div>
     {% endif %}
-    <div class="form-group">
-      <label for="exampleInputEmail1">Estado</label>
-      <select class="form-control" id="disposicion" name="disposicion">
-        <option selected>{{all.condiciones}}</option>
-        <option>CHATARRA</option>
-        <option>REHA</option>
-        <option>ALMACEN</option>
-      </select>
-    </div>
     <div class="form-group">
       <label for="exampleInputEmail1">fecha de fabricación</label>
       <input type="text" name="f_fab" value="{{all.f_fab}}" class="form-control" id="fecha_fab">
