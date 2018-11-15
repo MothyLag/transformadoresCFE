@@ -29,7 +29,7 @@ $app->get('/search/',function () use($app){
   $datos['all'] = null;
   if($rubro == "tiempo" || $rubro == "mes"){
       $tiempo = "'%/".$_GET['texto']."'";
-      $st = $app->db->prepare("SELECT r.id,r.fecha,r.ubicacion,r.responsable,r.num_circuito,r.causa,i.id idi,i.fecha fechai,i.ubicacion ubicacioni,i.responsable responsablei,i.num_circuito num_circuitoi ,i.causa causai FROM retirado AS r JOIN instalado AS i ON(r.id_instalado = i.id) WHERE fechai LIKE $tiempo ORDER BY(fechai)");
+      $st = $app->db->prepare("SELECT r.id,r.fecha,r.ubicacion,r.responsable,r.num_circuito,r.causa,i.id idi,i.fecha fechai,i.ubicacion ubicacioni,i.responsable responsablei,i.num_circuito num_circuitoi ,i.causa causai FROM retirado AS r JOIN instalado AS i ON(r.id_instalado = i.id) WHERE fechai LIKE $tiempo ORDER BY(substr(r.fecha,7)||substr(r.fecha,4,2)||substr(r.fecha,1,2))");
       $st->execute();
       $datos['all'] = $st->fetchAll();
   }else{
