@@ -26,8 +26,8 @@ $app->post("/registrar/",function () use($app){
     foreach ($_POST['retirado'] as $value) {
       $retirado[] = $value;
     }
-    $sql2 = "INSERT INTO retirado(id_instalado,fecha,ubicacion,responsable,num_circuito,causa,coordenadas,marca,capacidad,fases,voltmed,voltbaj,no_serie,no_econo,tipo,tipo2,aceite,peso,causadan,clavedan,condiciones) VALUES (last_insert_rowid(),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-    $st = $app->db->prepare("INSERT INTO instalado(fecha,ubicacion,responsable,num_circuito,causa,coordenadas,marca,capacidad,fases,voltmed,voltbaj,no_serie,no_econo,tipo,tipo2,aceite,peso,condiciones) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    $sql2 = "INSERT INTO retirado(id_instalado,fecha,ubicacion,responsable,num_circuito,causa,coordenadas,marca,capacidad,fases,voltmed,voltbaj,no_serie,no_econo,tipo,tipo2,aceite,peso,causadan,clavedan,condiciones,f_fab,f_rep) VALUES (last_insert_rowid(),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    $st = $app->db->prepare("INSERT INTO instalado(fecha,ubicacion,responsable,num_circuito,causa,coordenadas,marca,capacidad,fases,voltmed,voltbaj,no_serie,no_econo,tipo,tipo2,aceite,peso,condiciones,f_fab,f_rep) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
     $st->execute($instalado);
     $st2 = $app->db->prepare($sql2);
     $st2->execute($retirado);
@@ -62,7 +62,7 @@ $app->post("/update-retirado/",function () use($app){
   foreach ($_POST as $value) {
     $data[] = $value;
   }
-  $st = $app->db->prepare("UPDATE retirado SET fecha = ?,ubicacion = ?,responsable = ?,num_circuito = ?,causa = ?,coordenadas = ?,marca = ?,capacidad = ?,fases = ?,voltmed = ?,voltbaj = ?,no_serie = ?,no_econo = ?,tipo2 = ?,aceite = ?,peso = ?,causadan = ?,clavedan = ?,condiciones = ? WHERE id=?");
+  $st = $app->db->prepare("UPDATE retirado SET fecha = ?,ubicacion = ?,responsable = ?,num_circuito = ?,causa = ?,coordenadas = ?,marca = ?,capacidad = ?,fases = ?,voltmed = ?,voltbaj = ?,no_serie = ?,no_econo = ?,tipo2 = ?,aceite = ?,peso = ?,causadan = ?,clavedan = ?,condiciones = ?,f_fab = ?,f_rep = ? WHERE id=?");
   $st->execute($data);
   $st = $app->db->prepare("SELECT fecha,ubicacion,responsable,num_circuito,causa,coordenadas FROM retirado WHERE id=?");
   $st->setFetchMode(PDO::FETCH_OBJ);
@@ -72,7 +72,7 @@ $app->post("/update-retirado/",function () use($app){
   foreach ($daticos as $value) {
     $data2[] = $value;
   }
-  $st = $app->db->prepare("UPDATE instalado SET fecha = ?,ubicacion = ?,responsable = ?,num_circuito = ?,causa = ?,coordenadas = ? WHERE id=".$_POST['id']."");
+  $st = $app->db->prepare("UPDATE instalado SET fecha = ?,ubicacion = ?,responsable = ?,num_circuito = ?,causa = ?,coordenadas = ?,f_fab = ?,f_rep = ? WHERE id=".$_POST['id']."");
   $st->execute($data2);
 })->name('update-retirado');
 
@@ -81,7 +81,7 @@ $app->post("/update-instalado/",function () use($app){
   foreach ($_POST as $value) {
     $data[] = $value;
   }
-  $st = $app->db->prepare("UPDATE instalado SET fecha = ?,ubicacion = ?,responsable = ?,num_circuito = ?,causa = ?,coordenadas = ?,marca = ?,capacidad = ?,fases = ?,voltmed = ?,voltbaj = ?,no_serie = ?,no_econo = ?,tipo2 = ?,aceite = ?,peso = ?,condiciones = ? WHERE id=?");
+  $st = $app->db->prepare("UPDATE instalado SET fecha = ?,ubicacion = ?,responsable = ?,num_circuito = ?,causa = ?,coordenadas = ?,marca = ?,capacidad = ?,fases = ?,voltmed = ?,voltbaj = ?,no_serie = ?,no_econo = ?,tipo2 = ?,aceite = ?,peso = ?,condiciones = ?,f_fab = ?,f_rep = ? WHERE id=?");
   $st->execute($data);
   $st = $app->db->prepare("SELECT fecha,ubicacion,responsable,num_circuito,causa,coordenadas FROM instalado WHERE id=?");
   $st->setFetchMode(PDO::FETCH_OBJ);

@@ -46,3 +46,8 @@ CREATE TABLE IF NOT EXISTS instalado(
 
 --pruebas
 INSERT INTO retirado (fecha,ubicacion,responsable,num_circuito,causa) VALUES("20/05/2017","calle juarez","E.A.M","tze 4820","daño en x3");
+ALTER TABLE retirado ADD COLUMN f_fab STRING;
+ALTER TABLE retirado ADD COLUMN f_rep STRING;
+
+ALTER TABLE instalado ADD COLUMN f_fab STRING;
+ALTER TABLE instalado ADD COLUMN f_rep STRING;

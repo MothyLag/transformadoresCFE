@@ -1,9 +1,24 @@
 <div class="container">
 <h1>Reporte mensual</h1>
-<button class="btn btn-primary" id="generar">generar</button>
+<div class="col sm-4 offset-sm-2">
+  <label for="inicio">inicio</label>
+  <input id="inicio" type="text" placeholder="fecha de inicio">
+  <label for="fin">fin</label>
+  <input id="fin" type="text" placeholder="fecha del fin">
+  <button id="generar" class="btn btn-outline-success" type="submit">Generar1</button>
 </div>
+<br><br><br>
+<!--div class="col sm-4 offset-sm-2">
+  <label for="inicio">inicio</label>
+  <input id="inicio" type="text" placeholder="fecha de inicio">
+  <label for="fin">fin</label>
+  <input id="fin" type="text" placeholder="fecha del fin">
+  <button id="generar2" class="btn btn-outline-success" type="submit">Generar2</button>
+</div-->
 <script type="text/javascript">
 $('#generar').click(function(){
-  window.location.assign("{{urlFor('get-excel')}}");
+  var inicio = $('#inicio').val();
+  var fin = $('#fin').val();
+  window.location.assign("{{urlFor('get-excel')}}?inicio="+inicio+"&fin="+fin);
 });
 </script>
