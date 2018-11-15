@@ -60,6 +60,8 @@
               info.retirado.causa2 = $('#causa2').val();
               info.retirado.clave = $('#clave').val();
               info.retirado.disposicion = $('#disposicion').val();
+              info.retirado.f_fab = $('#fecha_fab').val();
+              info.retirado.f_rep = $('#fecha_rep').val();
               pagina++;
               $.get("{{urlFor('getPagina')}}",{pagina:pagina},function(data2){
                 $('#contenedor').html(data2);
@@ -83,6 +85,8 @@
                   info.instalado.litros_i = $('#litros_i').val();
                   info.instalado.peso_i = $('#peso_i').val();
                   info.instalado.estado_i = $('#estado_i').val();
+                  info.instalado.f_fab = $('#fecha_fab').val();
+                  info.instalado.f_rep = $('#fecha_rep').val();
                   $.post("{{urlFor('registrar')}}",info).done(function(){
                     $('#registrar').addClass('disabled');
                     $.notify({
