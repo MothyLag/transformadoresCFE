@@ -5,20 +5,26 @@
   <input id="inicio" type="text" placeholder="fecha de inicio">
   <label for="fin">fin</label>
   <input id="fin" type="text" placeholder="fecha del fin">
-  <button id="generar" class="btn btn-outline-success" type="submit">Generar1</button>
+  <button id="generar" class="btn btn-outline-success" type="submit">Anexo 3</button>
 </div>
 <br><br><br>
-<!--div class="col sm-4 offset-sm-2">
-  <label for="inicio">inicio</label>
-  <input id="inicio" type="text" placeholder="fecha de inicio">
-  <label for="fin">fin</label>
-  <input id="fin" type="text" placeholder="fecha del fin">
-  <button id="generar2" class="btn btn-outline-success" type="submit">Generar2</button>
-</div-->
+<div class="col sm-4 offset-sm-2">
+  <label for="inicio2">inicio</label>
+  <input id="inicio2" type="text" placeholder="fecha de inicio">
+  <label for="fin2">fin</label>
+  <input id="fin2" type="text" placeholder="fecha del fin">
+  <button id="generar2" class="btn btn-outline-success" type="submit">Anexo 4</button>
+</div>
 <script type="text/javascript">
 $('#generar').click(function(){
   var inicio = $('#inicio').val();
   var fin = $('#fin').val();
   window.location.assign("{{urlFor('get-excel')}}?inicio="+inicio+"&fin="+fin);
 });
+$('#generar2').click(function(){
+  var inicio = $('#inicio2').val();
+  var fin = $('#fin2').val();
+  window.location.assign("{{urlFor('get-excel2')}}?inicio="+inicio+"&fin="+fin);
+});
+
 </script>

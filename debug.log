@@ -2689,3 +2689,126 @@
 - 13:31:57.671 DEBUG: Calling CefQuitMessageLoop()
 - 13:31:57.812 INFO: Ended application
 - 13:31:57.812 INFO: --------------------------------------------------------
+- 04:45:48.000 INFO: --------------------------------------------------------
+- 04:45:48.047 INFO: Started application
+- 04:45:48.047 INFO: Logging to: C:\Users\Mothy\Documents\proyectoNestor\debug.log
+- 04:45:48.047 INFO: Log level = DEBUG4
+- 04:45:48.047 INFO: Starting Mongoose 3.9c web server
+- 04:45:48.047 INFO: WWW directory: C:\Users\Mothy\Documents\proyectoNestor\www
+- 04:45:48.047 INFO: Index files: index.html,index.php
+- 04:45:48.047 INFO: CGI interpreter: C:\Users\Mothy\Documents\proyectoNestor\php\php-cgi.exe
+- 04:45:48.047 INFO: CGI pattern: **.php$
+- 04:45:48.047 INFO: Hide files patterns: 
+- 04:45:48.047 INFO: CGI environment variables set: TMP=C:\Users\Mothy\AppData\Local\Temp\,TEMP=C:\Users\Mothy\AppData\Local\Temp\,TMPDIR=C:\Users\Mothy\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 04:45:48.063 INFO: Web server url: http://127.0.0.1:5000/
+- 04:45:48.063 INFO: remote_debugging_port = 57763
+- 04:45:48.063 DEBUG: Command line string for the browser process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --remote-debugging-port=57763
+- 04:45:50.782 DEBUG: App::OnContextInitialized()
+- 04:45:50.782 DEBUG: Window max width/height = 1286/680
+- 04:45:50.782 DEBUG: GetBrowserWindow(): not found, hwnd = 66572
+- 04:45:50.782 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 04:45:50.828 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 04:45:50.828 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 04:45:50.828 DEBUG: BrowserWindow::CreateBrowserControl()
+- 04:45:50.828 DEBUG: StoreBrowserWindow(): hwnd = 66572
+- 04:45:50.125 DEBUG: ClientHandler::OnAfterCreated()
+- 04:45:50.125 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 04:45:50.172 DEBUG: Command line string for the gpu-process process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x9874 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=24.20.13011.1009 --gpu-driver-date=8-27-2018 --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --service-request-channel-token=822B481392627B95A7503D63D638393F --mojo-platform-channel-handle=1700 /prefetch:2
+- 04:45:50.266 DEBUG: OnLoadingStateChange: loading=1, url=
+- 04:45:51.000 DEBUG: Command line string for the renderer process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=renderer --no-sandbox --primordial-pipe-token=254112E273B16DF313A0005CEA3937AF --lang=en-US --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=254112E273B16DF313A0005CEA3937AF --renderer-client-id=3 --mojo-platform-channel-handle=2068 /prefetch:1
+- 04:45:58.391 DEBUG: OnBrowserCreated()
+[1120/044614.943:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 04:46:42.594 INFO: GET 200 /
+- 04:46:42.594 INFO: GET 200 /
+- 04:46:42.610 INFO: GET 200 /
+- 04:46:48.344 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/
+- 04:46:50.438 INFO: GET 500 /favicon.ico
+- 04:47:36.110 DEBUG: WM_DESTROY
+- 04:47:36.110 DEBUG: RemoveBrowserWindow(): hwnd = 66572
+- 04:47:36.110 INFO: Stopping Mongoose web server
+- 04:47:36.110 DEBUG: Mongoose webserver stopped immediately
+- 04:47:37.485 DEBUG: OnBeforeClose() hwnd=66580
+- 04:47:37.485 DEBUG: RemoveBrowserWindow(): hwnd = 66580
+- 04:47:37.485 DEBUG: GetBrowserWindow(): not found, hwnd = 66580
+- 04:47:37.485 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 04:47:37.485 DEBUG: Calling CefQuitMessageLoop()
+- 04:47:37.656 DEBUG: OnBrowserDestroyed()
+- 04:47:42.000 INFO: --------------------------------------------------------
+- 04:47:42.000 INFO: Started application
+- 04:47:42.000 INFO: Logging to: C:\Users\Mothy\Documents\proyectoNestor\debug.log
+- 04:47:42.000 INFO: Log level = DEBUG4
+- 04:47:42.000 INFO: Starting Mongoose 3.9c web server
+- 04:47:42.000 INFO: WWW directory: C:\Users\Mothy\Documents\proyectoNestor\www
+- 04:47:42.000 INFO: Index files: index.html,index.php
+- 04:47:42.000 INFO: CGI interpreter: C:\Users\Mothy\Documents\proyectoNestor\php\php-cgi.exe
+- 04:47:42.000 INFO: CGI pattern: **.php$
+- 04:47:42.000 INFO: Hide files patterns: 
+- 04:47:42.000 INFO: CGI environment variables set: TMP=C:\Users\Mothy\AppData\Local\Temp\,TEMP=C:\Users\Mothy\AppData\Local\Temp\,TMPDIR=C:\Users\Mothy\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 04:47:42.015 INFO: Web server url: http://127.0.0.1:5000/
+- 04:47:42.015 INFO: remote_debugging_port = 53390
+- 04:47:42.031 DEBUG: Command line string for the browser process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --remote-debugging-port=53390
+- 04:47:42.109 DEBUG: App::OnContextInitialized()
+- 04:47:42.109 DEBUG: Window max width/height = 1286/680
+- 04:47:42.109 DEBUG: GetBrowserWindow(): not found, hwnd = 263374
+- 04:47:42.109 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 04:47:42.125 WARNING: Setting icon from settings file failed (ICON_BIG)
+- 04:47:42.125 WARNING: Setting icon from settings file failed (ICON_SMALL)
+- 04:47:42.125 DEBUG: BrowserWindow::CreateBrowserControl()
+- 04:47:42.125 DEBUG: StoreBrowserWindow(): hwnd = 263374
+- 04:47:42.218 DEBUG: ClientHandler::OnAfterCreated()
+- 04:47:42.218 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 04:47:42.250 DEBUG: OnLoadingStateChange: loading=1, url=
+- 04:47:42.766 INFO: Ended application
+- 04:47:42.766 INFO: --------------------------------------------------------
+- 04:47:42.000 DEBUG: Command line string for the gpu-process process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,26,41,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x1002 --gpu-device-id=0x9874 --gpu-driver-vendor="Advanced Micro Devices, Inc." --gpu-driver-version=24.20.13011.1009 --gpu-driver-date=8-27-2018 --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --service-request-channel-token=CD4FC5678137B25FB993FFB43EFFA657 --mojo-platform-channel-handle=1700 /prefetch:2
+- 04:47:42.000 DEBUG: Command line string for the renderer process: "C:\Users\Mothy\Documents\proyectoNestor\cfe.exe" --type=renderer --no-sandbox --primordial-pipe-token=A3D8D65BD62048BCD31091431BD108B3 --lang=en-US --lang=en-US --log-file="C:\Users\Mothy\Documents\proyectoNestor\debug.log" --enable-pinch --device-scale-factor=1 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=A3D8D65BD62048BCD31091431BD108B3 --renderer-client-id=3 --mojo-platform-channel-handle=2220 /prefetch:1
+[1120/044742.858:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 04:47:43.438 DEBUG: OnBrowserCreated()
+- 04:47:50.109 INFO: GET 200 /
+- 04:47:50.234 INFO: GET 304 /web/css/bootstrap-datepicker.min.css
+- 04:47:50.234 INFO: GET 304 /web/css/bootstrap.min.css
+- 04:47:50.234 INFO: GET 304 /web/css/animate.css
+- 04:47:50.250 INFO: GET 304 /web/js/sweetalert2.all.min.js
+- 04:47:50.250 INFO: GET 304 /web/js/jquery.js
+- 04:47:54.547 DEBUG: OnContextCreated()
+- 04:47:54.312 INFO: GET 304 /web/js/bootstrap-notify.min.js
+- 04:47:54.312 INFO: GET 304 /web/js/popper.min.js
+- 04:47:54.312 INFO: GET 304 /web/js/bootstrap.min.js
+- 04:47:54.312 INFO: GET 304 /web/js/bootstrap-datepicker.js
+- 04:47:55.797 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:5000/
+- 04:47:56.625 INFO: GET 200 /dashboard/?vista=inicio
+- 04:47:57.406 INFO: GET 200 /getPagina/?pagina=1
+- 04:58:19.218 INFO: GET 200 /
+- 04:58:19.281 INFO: GET 304 /web/css/animate.css
+- 04:58:19.312 INFO: GET 304 /web/css/bootstrap-datepicker.min.css
+- 04:58:19.812 INFO: GET 304 /web/js/jquery.js
+- 04:58:20.875 INFO: GET 304 /web/js/sweetalert2.all.min.js
+- 04:58:20.062 INFO: GET 304 /web/js/bootstrap-notify.min.js
+- 04:58:20.187 INFO: GET 304 /web/js/bootstrap-datepicker.js
+- 04:58:20.281 INFO: GET 304 /web/js/popper.min.js
+- 04:58:21.359 INFO: GET 200 /dashboard/?vista=inicio
+- 04:58:22.922 INFO: GET 500 /favicon.ico
+- 04:58:22.703 INFO: GET 200 /getPagina/?pagina=1
+- 04:58:32.515 INFO: GET 200 /dashboard/?vista=reporte
+- 04:58:33.828 INFO: GET 500 /favicon.ico
+- 04:58:51.937 INFO: GET 200 /get-excel/?inicio=10/01/2016&fin=11/02/2018
+- 05:07:31.500 INFO: GET 200 /dashboard/?vista=reporte
+- 05:07:48.906 INFO: GET 500 /get-excel2/?inicio=10/01/2016&fin=02/02/2018
+- 05:07:48.500 INFO: GET 500 /favicon.ico
+- 05:08:17.828 INFO: GET 500 /get-excel2/?inicio=10/01/2016&fin=02/02/2018
+- 05:08:17.297 INFO: GET 500 /favicon.ico
+- 05:08:51.640 INFO: GET 200 /get-excel2/?inicio=10/01/2016&fin=02/02/2018
+- 05:11:17.250 INFO: GET 200 /get-excel2/?inicio=10/01/2016&fin=02/02/2018
+- 05:11:52.203 INFO: GET 200 /get-excel2/?inicio=10/01/2016&fin=02/02/2018
+- 05:13:03.718 INFO: GET 200 /get-excel2/?inicio=10/01/2016&fin=02/02/2018
+- 05:13:44.718 DEBUG: WM_DESTROY
+- 05:13:44.718 DEBUG: RemoveBrowserWindow(): hwnd = 263374
+- 05:13:44.718 INFO: Stopping Mongoose web server
+- 05:13:44.718 DEBUG: Mongoose webserver stopped immediately
+- 05:13:44.734 DEBUG: OnBeforeClose() hwnd=132108
+- 05:13:44.734 DEBUG: RemoveBrowserWindow(): hwnd = 132108
+- 05:13:44.734 DEBUG: GetBrowserWindow(): not found, hwnd = 132108
+- 05:13:44.734 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 05:13:44.734 DEBUG: Calling CefQuitMessageLoop()
+- 05:13:45.828 INFO: Ended application
+- 05:13:45.828 INFO: --------------------------------------------------------
