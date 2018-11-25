@@ -51,3 +51,5 @@ ALTER TABLE retirado ADD COLUMN f_rep STRING;
 
 ALTER TABLE instalado ADD COLUMN f_fab STRING;
 ALTER TABLE instalado ADD COLUMN f_rep STRING;
+
+ALTER TABLE retirado ADD COLUMN taller STRING;

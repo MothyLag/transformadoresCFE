@@ -11,7 +11,7 @@ $app->get('/get-excel/',function () use($app){
   $inputFileName = './plantillas/plantilla1.xls';
   $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($inputFileName);
   $sheet = $spreadsheet->getActiveSheet();
-  $st = $app->db->prepare("SELECT r.id,r.fecha,r.ubicacion,r.responsable,r.num_circuito,r.causa,r.coordenadas,r.marca,r.capacidad,r.fases,r.voltmed,r.voltbaj,r.no_serie,r.no_econo,r.tipo,r.tipo2,r.aceite,r.peso,r.causadan,r.clavedan,r.condiciones,r.f_fab,i.marca marcai,i.capacidad capacidadi,i.fases fasesi,i.voltmed voltmedi,i.voltbaj voltbaji,i.no_serie no_seriei,i.no_econo no_econoi,i.tipo tipoi,i.tipo2 tipo2i,i.aceite aceitei,i.peso pesoi,i.causa causai,i.f_fab f_fabi,i.condiciones condicionesi FROM instalado AS i JOIN retirado AS r ON(r.id_instalado = i.id) WHERE substr(r.fecha,7)||substr(r.fecha,4,2)||substr(r.fecha,1,2) between ? and ? AND (r.causa = 'Creacion de area nueva' OR r.causa='Movimiento en red') ");
+  $st = $app->db->prepare("SELECT r.id,r.fecha,r.ubicacion,r.responsable,r.num_circuito,r.causa,r.coordenadas,r.marca,r.capacidad,r.fases,r.voltmed,r.voltbaj,r.no_serie,r.no_econo,r.tipo,r.tipo2,r.aceite,r.peso,r.causadan,r.clavedan,r.condiciones,r.f_fab,i.marca marcai,i.capacidad capacidadi,i.fases fasesi,i.voltmed voltmedi,i.voltbaj voltbaji,i.no_serie no_seriei,i.no_econo no_econoi,i.tipo tipoi,i.tipo2 tipo2i,i.aceite aceitei,i.peso pesoi,i.causa causai,i.f_fab f_fabi,i.condiciones condicionesi FROM instalado AS i JOIN retirado AS r ON(r.id_instalado = i.id) WHERE substr(r.fecha,7)||substr(r.fecha,4,2)||substr(r.fecha,1,2) between ? and ? AND (r.causa = 'Creación de área nueva' OR r.causa='Movimiento en red') ");
   $st->setFetchMode(PDO::FETCH_OBJ);
   $st->execute(array($i,$f));
   $data = $st->fetchAll();
@@ -45,6 +45,8 @@ $app->get('/get-excel/',function () use($app){
       $sheet->getCell('P'.$i)->setValue($value->ubicacion);
       // $sheet->getStyle('N'.$i)->getAlignment()->setWrapText(true);
       $sheet->getCell('Q'.$i)->setValue($value->fecha);
+      $sheet->getCell('U'.$i)->setValue($value->clavedan);
+      $sheet->getStyle('U'.$i)->getAlignment()->setWrapText(false);
       // $sheet->getStyle('O'.$i)->getAlignment()->setWrapText(true);
       $i++;
       $sheet->getCell('C'.$i)->setValue("instalado");
@@ -93,7 +95,7 @@ $app->get('/get-excel2/',function () use($app){
   $inputFileName = './plantillas/plantilla2.xls';
   $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($inputFileName);
   $sheet = $spreadsheet->getActiveSheet();
-  $st = $app->db->prepare("SELECT r.f_rep,r.id,r.fecha,r.ubicacion,r.responsable,r.num_circuito,r.causa,r.coordenadas,r.marca,r.capacidad,r.fases,r.voltmed,r.voltbaj,r.no_serie,r.no_econo,r.tipo,r.tipo2,r.aceite,r.peso,r.causadan,r.clavedan,r.condiciones,r.f_fab,i.marca marcai,i.capacidad capacidadi,i.fases fasesi,i.voltmed voltmedi,i.voltbaj voltbaji,i.no_serie no_seriei,i.no_econo no_econoi,i.tipo tipoi,i.tipo2 tipo2i,i.aceite aceitei,i.peso pesoi,i.causa causai,i.f_fab f_fabi,i.condiciones condicionesi,i.f_rep f_repi FROM instalado AS i JOIN retirado AS r ON(r.id_instalado = i.id) WHERE substr(r.fecha,7)||substr(r.fecha,4,2)||substr(r.fecha,1,2) between ? and ? AND r.causa='Transformador dañado'");
+  $st = $app->db->prepare("SELECT r.f_rep,r.id,r.fecha,r.ubicacion,r.responsable,r.num_circuito,r.causa,r.coordenadas,r.marca,r.capacidad,r.fases,r.voltmed,r.voltbaj,r.no_serie,r.no_econo,r.tipo,r.tipo2,r.aceite,r.peso,r.causadan,r.clavedan,r.condiciones,r.f_fab,r.taller,i.marca marcai,i.capacidad capacidadi,i.fases fasesi,i.voltmed voltmedi,i.voltbaj voltbaji,i.no_serie no_seriei,i.no_econo no_econoi,i.tipo tipoi,i.tipo2 tipo2i,i.aceite aceitei,i.peso pesoi,i.causa causai,i.f_fab f_fabi,i.condiciones condicionesi,i.f_rep f_repi FROM instalado AS i JOIN retirado AS r ON(r.id_instalado = i.id) WHERE substr(r.fecha,7)||substr(r.fecha,4,2)||substr(r.fecha,1,2) between ? and ? AND r.causa='Transformador dañado'");
   $st->setFetchMode(PDO::FETCH_OBJ);
   $st->execute(array($i,$f));
   $data = $st->fetchAll();
@@ -117,11 +119,14 @@ $app->get('/get-excel2/',function () use($app){
       $sheet->getCell('J'.$i)->setValue($value->tipo." ".$value->tipo2);
       // $sheet->getStyle('H'.$i)->getAlignment()->setWrapText(true);
       $sheet->getCell('K'.$i)->setValue($value->marca);
+      $sheet->getCell('R'.$i)->setValue($value->taller);
       // $sheet->getStyle('I'.$i)->getAlignment()->setWrapText(true);
       //$sheet->getCell('M'.$i)->setValue($value->condiciones);
       // $sheet->getStyle('K'.$i)->getAlignment()->setWrapText(true);
       $sheet->getCell('S'.$i)->setValue($value->f_rep);
       $sheet->getStyle('S'.$i)->getAlignment()->setWrapText(false);
+      $sheet->getCell('U'.$i)->setValue($value->clavedan);
+      $sheet->getStyle('U'.$i)->getAlignment()->setWrapText(false);
 
       $sheet->getCell('W'.$i)->setValue($value->coordenadas);
       // $sheet->getStyle('M'.$i)->getAlignment()->setWrapText(true);

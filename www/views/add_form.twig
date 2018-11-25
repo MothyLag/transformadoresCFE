@@ -62,6 +62,7 @@
               info.retirado.disposicion = $('#disposicion').val();
               info.retirado.f_fab = $('#fecha_fab').val();
               info.retirado.f_rep = $('#fecha_rep').val();
+              info.retirado.taller = $('#taller').val();
               pagina++;
               $.get("{{urlFor('getPagina')}}",{pagina:pagina},function(data2){
                 $('#contenedor').html(data2);

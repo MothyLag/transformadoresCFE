@@ -26,7 +26,7 @@ $app->post("/registrar/",function () use($app){
     foreach ($_POST['retirado'] as $value) {
       $retirado[] = $value;
     }
-    $sql2 = "INSERT INTO retirado(id_instalado,fecha,ubicacion,responsable,num_circuito,causa,coordenadas,marca,capacidad,fases,voltmed,voltbaj,no_serie,no_econo,tipo,tipo2,aceite,peso,causadan,clavedan,condiciones,f_fab,f_rep) VALUES (last_insert_rowid(),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    $sql2 = "INSERT INTO retirado(id_instalado,fecha,ubicacion,responsable,num_circuito,causa,coordenadas,marca,capacidad,fases,voltmed,voltbaj,no_serie,no_econo,tipo,tipo2,aceite,peso,causadan,clavedan,condiciones,f_fab,f_rep,taller) VALUES (last_insert_rowid(),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
     $st = $app->db->prepare("INSERT INTO instalado(fecha,ubicacion,responsable,num_circuito,causa,coordenadas,marca,capacidad,fases,voltmed,voltbaj,no_serie,no_econo,tipo,tipo2,aceite,peso,condiciones,f_fab,f_rep) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
     $st->execute($instalado);
     $st2 = $app->db->prepare($sql2);
@@ -62,7 +62,7 @@ $app->post("/update-retirado/",function () use($app){
   foreach ($_POST as $value) {
     $data[] = $value;
   }
-  $st = $app->db->prepare("UPDATE retirado SET fecha = ?,ubicacion = ?,responsable = ?,num_circuito = ?,causa = ?,coordenadas = ?,marca = ?,capacidad = ?,fases = ?,voltmed = ?,voltbaj = ?,no_serie = ?,no_econo = ?,tipo2 = ?,aceite = ?,peso = ?,causadan = ?,clavedan = ?,condiciones = ?,f_fab = ?,f_rep = ? WHERE id=?");
+  $st = $app->db->prepare("UPDATE retirado SET fecha = ?,ubicacion = ?,responsable = ?,num_circuito = ?,causa = ?,coordenadas = ?,marca = ?,capacidad = ?,fases = ?,voltmed = ?,voltbaj = ?,no_serie = ?,no_econo = ?,tipo2 = ?,aceite = ?,peso = ?,causadan = ?,clavedan = ?,condiciones = ?,taller = ?,f_fab = ?,f_rep = ? WHERE id=?");
   $st->execute($data);
   $st = $app->db->prepare("SELECT fecha,ubicacion,responsable,num_circuito,causa,coordenadas FROM retirado WHERE id=?");
   $st->setFetchMode(PDO::FETCH_OBJ);
