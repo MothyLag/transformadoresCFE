@@ -1,10 +1,10 @@
 <?php
 session_cache_limiter(false);
-session_start();
+//session_start();
 date_default_timezone_set('America/Mexico_City');
 // CONFIG
-define('SYS_TITLE', 'citas');
-define('SYS_NAME', 'citas');
+define('SYS_TITLE', 'cfe');
+define('SYS_NAME', 'cfe');
 define('SYS_DEBUG', true);
 
 // FOLDERS
@@ -162,6 +162,9 @@ $twig->addFilter(new Twig_SimpleFilter('filesize', function ($fs, $digits = 2) u
     aceite  TEXT,
     peso TEXT,
     causadan TEXT,
+    f_fab TEXT,
+    f_rep TEXT,
+    taller TEXT,
     clavedan TEXT,
     condiciones TEXT
     );";
@@ -169,6 +172,8 @@ $twig->addFilter(new Twig_SimpleFilter('filesize', function ($fs, $digits = 2) u
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     fecha TEXT NOT NULL,
     ubicacion TEXT,
+    f_fab TEXT,
+    f_rep TEXT,
     responsable TEXT,
     num_circuito TEXT,
     causa TEXT,

@@ -26,7 +26,10 @@ $app->post("/registrar/",function () use($app){
     foreach ($_POST['retirado'] as $value) {
       $retirado[] = $value;
     }
-    $sql2 = "INSERT INTO retirado(id_instalado,fecha,ubicacion,responsable,num_circuito,causa,coordenadas,marca,capacidad,fases,voltmed,voltbaj,no_serie,no_econo,tipo,tipo2,aceite,peso,causadan,clavedan,condiciones,f_fab,f_rep,taller) VALUES (last_insert_rowid(),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    if(!empty($retirado)){
+      $sql2 = "INSERT INTO retirado(id_instalado,fecha,ubicacion,responsable,num_circuito,causa,coordenadas,marca,capacidad,fases,voltmed,voltbaj,no_serie,no_econo,tipo,tipo2,aceite,peso,causadan,clavedan,condiciones,f_fab,f_rep,taller) VALUES (last_insert_rowid(),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    }
+    
     $st = $app->db->prepare("INSERT INTO instalado(fecha,ubicacion,responsable,num_circuito,causa,coordenadas,marca,capacidad,fases,voltmed,voltbaj,no_serie,no_econo,tipo,tipo2,aceite,peso,condiciones,f_fab,f_rep) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
     $st->execute($instalado);
     $st2 = $app->db->prepare($sql2);
