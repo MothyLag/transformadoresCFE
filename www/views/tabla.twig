@@ -18,6 +18,7 @@
     </thead>
     <tbody>
     {% for item in all %}
+    {% if item.fecha != "" %}
       <tr>
         <td>{{loop.index}}</td>
         <td>{{item.fecha}}</td>
@@ -32,6 +33,7 @@
           <button data-tabla="retirado" data-id="{{item.id}}" class="del btn btn-danger">Eliminar</button>
         </td>
       </tr>
+    {% endif %}
       <tr>
         <td>{{loop.index}}</td>
         <td>{{item.fechai}}</td>
