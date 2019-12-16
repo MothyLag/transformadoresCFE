@@ -32,11 +32,21 @@ $app->get('/search/',function () use($app){
       $st = $app->db->prepare("SELECT r.id,r.fecha,r.ubicacion,r.responsable,r.num_circuito,r.causa,i.id idi,i.fecha fechai,i.ubicacion ubicacioni,i.responsable responsablei,i.num_circuito num_circuitoi ,i.causa causai FROM retirado AS r JOIN instalado AS i ON(r.id_instalado = i.id) WHERE fechai LIKE $tiempo ORDER BY(substr(r.fecha,7)||substr(r.fecha,4,2)||substr(r.fecha,1,2))");
       $st->execute();
       $datos['all'] = $st->fetchAll();
+      if(empty($datos['all'])){
+        $st = $app->db->prepare("SELECT i.id idi,i.fecha fechai,i.ubicacion ubicacioni,i.responsable responsablei,i.num_circuito num_circuitoi ,i.causa causai FROM  instalado AS i  WHERE fechai LIKE $tiempo ORDER BY(substr(i.fecha,7)||substr(i.fecha,4,2)||substr(i.fecha,1,2))");
+        $st->execute();
+        $datos['all'] = $st->fetchAll();
+      }
   }else{
     $st = $app->db->prepare("SELECT r.id,r.fecha,r.ubicacion,r.responsable,r.num_circuito,r.causa,i.id idi,i.fecha fechai,i.ubicacion ubicacioni,i.responsable responsablei,i.num_circuito num_circuitoi ,i.causa causai FROM retirado AS r JOIN instalado AS i ON(r.id_instalado = i.id) WHERE r.$rubro = '$texto'");
     $st->setFetchMode(PDO::FETCH_OBJ);
     $st->execute();
     $datos['all'] = $st->fetchAll();
+    if(empty($datos['all'])){
+      $st = $app->db->prepare("SELECT i.id idi,i.fecha fechai,i.ubicacion ubicacioni,i.responsable responsablei,i.num_circuito num_circuitoi ,i.causa causai FROM instalado AS i WHERE i.$rubro = '$texto'");
+      $st->execute();
+      $datos['all'] = $st->fetchAll();
+    }
   }
   return $app->render('tabla.twig',$datos);
 })->name('getsearch');

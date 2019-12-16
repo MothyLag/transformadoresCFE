@@ -33,6 +33,7 @@
       var rubro = $("#rubro").val();
       var texto = $("#txtBuscar").val();
       $.get("{{urlFor('getsearch')}}",{rubro:rubro,texto:texto},function(data){
+        console.log(data['all']);
         $('#contenido').html(data);
       });
       return false;
